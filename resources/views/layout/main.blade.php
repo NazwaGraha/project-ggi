@@ -140,20 +140,20 @@
                             <h3 class="widget_title">Address</h3>
                             <div class="th-widget-contact">
                                 <div class="info-box_text">
-                                    <div class="icon"><img src="assets/img/icon/phone.svg" alt="OCtopus Indonesia"></div>
+                                    <div class="icon"><img src="/assets/img/icon/phone.svg" alt="Octopus Indonesia Phone" width="24" height="24" loading="lazy"></div>
                                     <div class="details">
                                         <p><a href="whatsapp://send?text=Hello&phone=+6281111808661">081 111 808 661</a></p>
                                     </div>
                                 </div>
                                 <div class="info-box_text">
-                                    <div class="icon"><img src="assets/img/icon/envelope.svg" alt="Best Octopus Indonesia"></div>
+                                    <div class="icon"><img src="/assets/img/icon/envelope.svg" alt="Octopus Indonesia Email" width="24" height="24" loading="lazy"></div>
                                     <div class="details">
                                         <p><a href="mailto:Guritaglobalinternational@gmail.com"
                                                 class="info-box_link">Guritaglobalinternational@gmail.com</a></p>
                                     </div>
                                 </div>
                                 <div class="info-box_text">
-                                    <div class="icon"><img src="assets/img/icon/location-dot.svg" alt="Octopus Indonesia">
+                                    <div class="icon"><img src="/assets/img/icon/location-dot.svg" alt="Octopus Indonesia Location" width="24" height="24" loading="lazy">
                                     </div>
                                     <div class="details">
                                         <p>ICS Pelabuhan Perikanan Nusantara Kejawanan, Pegambiran, Kec. Lemahwungkuk,
@@ -168,24 +168,24 @@
                             <h3 class="widget_title">Instagram Post</h3>
                             <div class="sidebar-gallery">
                                 <div class="gallery-thumb"><img src="/assets/img/widget/gallery_1.webp"
-                                        alt="Octopus Indonesia"></div>
+                                        alt="Octopus Indonesia" width="85" height="85" loading="lazy" decoding="async"></div>
                                 <div class="gallery-thumb"><img src="/assets/img/widget/gallery_2.webp"
-                                        alt="Best Octopus Indonesia"></div>
+                                        alt="Best Octopus Indonesia" width="85" height="85" loading="lazy" decoding="async"></div>
                                 <div class="gallery-thumb"><img src="/assets/img/widget/gallery_3.webp"
-                                        alt="Frozen Octopus Supplier"></div>
+                                        alt="Frozen Octopus Supplier" width="85" height="85" loading="lazy" decoding="async"></div>
                                 <div class="gallery-thumb"><img src="/assets/img/widget/gallery_4.webp"
-                                        alt="Best Seafood"></div>
+                                        alt="Best Seafood" width="85" height="85" loading="lazy" decoding="async"></div>
                                 <div class="gallery-thumb"><img src="/assets/img/widget/gallery_5.webp"
-                                        alt="Specialized Indonesia Octopus Processor"></div>
+                                        alt="Specialized Indonesia Octopus Processor" width="85" height="85" loading="lazy" decoding="async"></div>
                                 <div class="gallery-thumb"><img src="/assets/img/widget/gallery_6.webp"
-                                        alt="Octopus  Specialized Processor"> </div>
+                                        alt="Octopus Specialized Processor" width="85" height="85" loading="lazy" decoding="async"> </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright-wrap" data-bg-src="assets/img/bg/copyright_bg_1.jpg">
+        <div class="copyright-wrap" data-bg-src="/assets/img/bg/copyright_bg_1.jpg">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center">
@@ -196,18 +196,14 @@
         </div>
     </footer>
     <!-- Optimized Deferred Scripts (Pagespeed 95+ without changing visual) -->
-    <script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/vendor/jquery-3.6.0.min.js" defer></script>
     <script src="/assets/js/swiper-bundle.min.js" defer></script>
     <script src="/assets/js/bootstrap.min.js" defer></script>
     <script src="/assets/js/jquery.magnific-popup.min.js" defer></script>
     <script src="/assets/js/jquery.counterup.min.js" defer></script>
     <script src="/assets/js/jquery-ui.min.js" defer></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js" defer></script>
-    <script src="/assets/js/isotope.pkgd.min.js" defer></script>
     <script src="/assets/js/gsap.min.js" defer></script>
-    <script src="/assets/js/circle-progress.js" defer></script>
-    <script src="/assets/js/matter.min.js" defer></script>
-    <script src="/assets/js/matterjs-custom.js" defer></script>
     <script src="/assets/js/nice-select.min.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
 

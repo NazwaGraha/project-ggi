@@ -141,26 +141,49 @@
     }
     </script>
 
-    <link rel="apple-touch-icon" href="assets/img/GGILogo.png">
-    <link rel="icon" type="image/png" href="assets/img/GGILogo.png">
+    <link rel="apple-touch-icon" href="/assets/img/GGILogo.png">
+    <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
     
-    <!-- Optimized Font Preconnect & display=swap for Pagespeed 95+ -->
+    <!-- Critical Above-The-Fold Inline Styles (Eliminates FOUC & Render-Blocking) -->
+    <style>
+        :root{--theme-color:#489B42;--title-color:#141d38;--body-color:#737887;--white-color:#ffffff;}
+        *,::after,::before{box-sizing:border-box}
+        body{margin:0;font-family:'Manrope',sans-serif;font-size:16px;font-weight:400;color:var(--body-color);line-height:28px;overflow-x:hidden}
+        .th-header{position:relative;z-index:41;width:100%;background:#fff}
+        .container,.th-container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:1320px}
+        .row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+        .align-items-center{align-items:center}
+        .justify-content-between{justify-content:space-between}
+        .th-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:500px;background:#141d38}
+        .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center}
+        .hero-style1{position:relative;z-index:9;max-width:700px;padding:130px 0 180px 0}
+        .hero-style1 .sub-title{font-size:18px;font-weight:700;display:block;margin-bottom:10px}
+        .hero-style1 .hero-title{font-size:42px;line-height:1.24;font-weight:800;margin-bottom:30px}
+        .th-btn{display:inline-flex;align-items:center;padding:14px 28px;border-radius:5px;font-weight:700;background:var(--theme-color);color:#fff;text-decoration:none}
+        .th-btn.style2{background:#fff;color:var(--title-color)}
+        @media (max-width:767px){.hero-style1{text-align:center;padding:120px 0 160px 0}.hero-style1 .hero-title{font-size:32px;line-height:1.25}}
+    </style>
+
+    <!-- Optimized Font Preconnect & Non-Blocking Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap">
+    </noscript>
 
-    <!-- LCP Hero Image Preload for Instant Mobile Paint -->
+    <!-- Instant LCP Hero Image Preload -->
     <link rel="preload" as="image" href="/assets/img/hero/bg1.webp" fetchpriority="high">
 
-    <!-- Critical CSS Loaded Directly -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    <!-- Non-critical CSS Preloaded (Eliminates Render-Blocking 2.4s) -->
-    <link rel="preload" href="/assets/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/assets/css/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/assets/css/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Non-Blocking Asynchronous CSS (Est savings 2,430ms) -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/style.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css" media="print" onload="this.media='all'">
     <noscript>
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/style.min.css">
         <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
         <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
@@ -176,7 +199,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/bg1.webp"></div>
+                        <div class="th-hero-bg background-image" style="background-image: url('/assets/img/hero/bg1.webp');" data-bg-src="/assets/img/hero/bg1.webp"></div>
                         <div class="container">
                             <div class="hero-style1">
                                 <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s" style="color: green;">Gurita Global Internasional</span>
@@ -191,7 +214,7 @@
                 </div>
                 <div class="swiper-slide" aria-hidden="true">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/bg2.webp"></div>
+                        <div class="th-hero-bg" data-bg-src="/assets/img/hero/bg2.webp"></div>
                         <div class="container">
                             <div class="hero-style1">
                                 <span class="sub-title style1" style="color: green;">Gurita Global Internasional</span>
@@ -206,7 +229,7 @@
                 </div>
                 <div class="swiper-slide" aria-hidden="true">
                     <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="assets/img/hero/bg3.webp"></div>
+                        <div class="th-hero-bg" data-bg-src="/assets/img/hero/bg3.webp"></div>
                         <div class="container">
                             <div class="hero-style1">
                                 <span class="sub-title style1" style="color: green;">Gurita Global Internasional</span>
@@ -228,39 +251,38 @@
         </div>
     </div>
 
-    <section class="category-area bg-top-center" data-bg-src="assets/img/bg/category_bg_1.png">
+    <section class="category-area bg-top-center" data-bg-src="/assets/img/bg/category_bg_1.png">
         <div class="container th-container">
             <div class="title-area text-center">
                 <span class="sub-title">The Best Octopus Indonesia For You</span>
-                <h2 class="sec-title">WORLD CLASS GIANT OCTOPUS PRODUCT</h2> <!-- FIXED TAG CLOSING FROM H2 TO H2 -->
+                <h2 class="sec-title">WORLD CLASS GIANT OCTOPUS PRODUCT</h2>
             </div>
             
-            <!-- Swiper Product Category Content ... (Tetap Sesuai Code Anda) ... -->
             <div class="swiper categorySlider" id="categorySlide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="category-card single">
-                            <div class="box-img global-img"><img src="assets/img/category/product-ggi 1.webp" alt="PT Gurita Global Internasional Frozen Octopus Product"></div>
+                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 1.webp" alt="PT Gurita Global Internasional Frozen Octopus Product" width="600" height="450" loading="lazy" decoding="async"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="category-card single">
-                            <div class="box-img global-img"><img src="assets/img/category/product-ggi 2.webp" alt="Frozen Raw Whole Cleaned Octopus Indonesia"></div>
+                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 2.webp" alt="Frozen Raw Whole Cleaned Octopus Indonesia" width="600" height="450" loading="lazy" decoding="async"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="category-card single">
-                            <div class="box-img global-img"><img src="assets/img/category/product-ggi 3.webp" alt="Blanched Octopus Tentacles Wholesale Indonesia"></div>
+                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 3.webp" alt="Blanched Octopus Tentacles Wholesale Indonesia" width="600" height="450" loading="lazy" decoding="async"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="category-card single">
-                            <div class="box-img global-img"><img src="assets/img/category/product-ggi 4.webp" alt="Premium Frozen Octopus Vulgaris GGI Factory"></div>
+                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 4.webp" alt="Premium Frozen Octopus Vulgaris GGI Factory" width="600" height="450" loading="lazy" decoding="async"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="category-card single">
-                            <div class="box-img global-img"><img src="assets/img/category/product-ggi 5.webp" alt="IQF Frozen Octopus Cut Pieces Indonesia"></div>
+                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 5.webp" alt="IQF Frozen Octopus Cut Pieces Indonesia" width="600" height="450" loading="lazy" decoding="async"></div>
                         </div>
                     </div>
                 </div>
@@ -284,16 +306,16 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="img-box1">
-                        <div class="img1"><img src="assets/img/normal/pic11.webp" alt="Octopus Indonesia Factory"></div>
-                        <div class="img2"><img src="assets/img/normal/pic12.webp" alt="About Octopus Indonesia Exporter"></div>
-                        <div class="img3"><img src="assets/img/normal/pic13.webp" alt="Premium Octopus Indonesia Process"></div>
+                        <div class="img1"><img src="/assets/img/normal/pic11.webp" alt="Octopus Indonesia Factory" width="312" height="630" loading="lazy" decoding="async"></div>
+                        <div class="img2"><img src="/assets/img/normal/pic12.webp" alt="About Octopus Indonesia Exporter" width="312" height="312" loading="lazy" decoding="async"></div>
+                        <div class="img3"><img src="/assets/img/normal/pic13.webp" alt="Premium Octopus Indonesia Process" width="312" height="312" loading="lazy" decoding="async"></div>
                     </div>
                 </div>
                 <div class="col-xl-6">
                     <div class="ps-xl-4 ms-xl-2">
                         <div class="title-area mb-20 pe-xl-5 me-xl-5">
                             <span class="sub-title style1">About Octopus Indonesia</span>
-                            <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">PT. Gurita Global Internasional</h2> <!-- FIXED TAG CLOSING FROM H2 TO H2 -->
+                            <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">PT. Gurita Global Internasional</h2>
                             <p class="sec-text mb-30"><b>Octopus Indonesia</b> - PT. Gurita Global Internasional is a B2B premium company born from a big vision to bring high-quality Indonesian seafood to the global market with world-class export standards.</p>
                             <p>We are a certified direct octopus processor and exporter. We act as a trusted bridge between rich Indonesian seas and international buyers across Europe, America, Japan, and Southeast Asia. Through a strict hygienic and sustainable process that complies with international food safety regulations, we guarantee premium quality shipments.</p>
                             <p>With an extensive global logistics framework, Octopus Indonesia meets consistent commercial volume demands without compromising quality. Partner with us to get the best wholesale factory price for premium bulk frozen octopus supply solutions.</p>
@@ -310,23 +332,20 @@
                 <span class="sub-title">Various Octopus Products with International standards</span>
                 <h2 class="sec-title">Recent Gallery Factory</h2>
             </div>
-            <!-- Gallery Row Content ... (Tetap Sesuai Code Anda, Sangat Baik) ... -->
             <div class="row gy-10 gx-10 justify-content-center align-items-center">
-                <!-- Gunakan Loop/Struktur yang ada -->
                 <div class="col-md-6 col-lg-2">
                     <div class="gallery-card">
                         <div class="box-img global-img">
-                            <a href="assets/img/gallery/Product-1.webp" class="popup-image">
+                            <a href="/assets/img/gallery/Product-1.webp" class="popup-image">
                                 <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/Product-1.webp" alt="Octopus Indonesia Commercial Product">
+                                <img src="/assets/img/gallery/Product-1.webp" alt="Octopus Indonesia Commercial Product" width="800" height="600" loading="lazy" decoding="async">
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- ... Sisa Galeri dipertahankan ... -->
             </div>
         </div>
-        <div class="shape-mockup d-none d-xl-block" data-top="-25%" data-left="0%"><img src="assets/img/shape/line.png" alt="Best Octopus Indonesia"></div>
-        <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="3%"><img class="gmovingX" src="assets/img/shape/shape_4.png" alt="Octopus Indonesia"></div>
+        <div class="shape-mockup d-none d-xl-block" data-top="-25%" data-left="0%"><img src="/assets/img/shape/line.png" alt="Best Octopus Indonesia" width="100" height="100" loading="lazy"></div>
+        <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="3%"><img class="gmovingX" src="/assets/img/shape/shape_4.png" alt="Octopus Indonesia" width="80" height="80" loading="lazy"></div>
     </div>
 @endsection

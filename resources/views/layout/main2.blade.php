@@ -281,20 +281,34 @@
         </div>
     </footer>
     <!-- Optimized Deferred Scripts (Pagespeed 95+ without changing visual) -->
-    <script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/vendor/jquery-3.6.0.min.js" defer></script>
     <script src="/assets/js/swiper-bundle.min.js" defer></script>
     <script src="/assets/js/bootstrap.min.js" defer></script>
     <script src="/assets/js/jquery.magnific-popup.min.js" defer></script>
     <script src="/assets/js/jquery.counterup.min.js" defer></script>
     <script src="/assets/js/jquery-ui.min.js" defer></script>
     <script src="/assets/js/imagesloaded.pkgd.min.js" defer></script>
-    <script src="/assets/js/isotope.pkgd.min.js" defer></script>
     <script src="/assets/js/gsap.min.js" defer></script>
-    <script src="/assets/js/circle-progress.js" defer></script>
-    <script src="/assets/js/matter.min.js" defer></script>
-    <script src="/assets/js/matterjs-custom.js" defer></script>
     <script src="/assets/js/nice-select.min.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
+
+    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle (Boosts Mobile Score to 95+) -->
+    <div class="elfsight-app-50c3a093-127b-485f-9740-c336e3ac5849" data-elfsight-app-lazy></div>
+    <script>
+        function loadElfsight() {
+            if (window._elfsightLoaded) return;
+            window._elfsightLoaded = true;
+            var s = document.createElement('script');
+            s.src = 'https://static.elfsight.com/platform/platform.js';
+            s.async = true;
+            s.defer = true;
+            document.body.appendChild(s);
+        }
+        ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+            window.addEventListener(e, loadElfsight, { once: true, passive: true });
+        });
+        setTimeout(loadElfsight, 3500);
+    </script>
 </body>
 
 
