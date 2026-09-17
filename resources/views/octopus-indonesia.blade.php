@@ -225,7 +225,51 @@
             .hero-style-b2b .hero-title{font-size:28px;line-height:1.25}
             .hero-style-b2b .hero-lead{font-size:15px;margin-bottom:25px}
             .b2b-btn-group{justify-content:center;margin-bottom:35px}
-            .hero-trust-bar{grid-template-columns:1fr;text-align:left;padding:16px}
+        }
+        
+        /* B2B Export Products Section */
+        .b2b-products-area{padding:80px 0 60px 0;background:#f8fafc;position:relative}
+        .b2b-sec-badge{display:inline-flex;align-items:center;background:rgba(72,155,66,0.14);color:#2d7a27;border:1px solid rgba(72,155,66,0.35);padding:6px 18px;border-radius:50px;font-size:12px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:14px}
+        .b2b-sec-title{font-size:36px;line-height:1.25;font-weight:800;color:#141d38;margin-bottom:12px;letter-spacing:-0.5px}
+        .b2b-sec-desc{font-size:16px;line-height:1.6;color:#5a6376;max-width:720px;margin:0 auto 40px auto}
+        
+        .b2b-product-card{background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 4px 20px rgba(14,25,45,0.05);transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column;height:100%}
+        .b2b-product-card:hover{transform:translateY(-6px);box-shadow:0 14px 32px rgba(14,25,45,0.12);border-color:#cbd5e1}
+        
+        .b2b-card-img-wrap{position:relative;width:100%;height:230px;overflow:hidden;background:#e2e8f0}
+        .b2b-card-img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+        .b2b-product-card:hover .b2b-card-img{transform:scale(1.05)}
+        
+        .b2b-card-index{position:absolute;top:12px;left:12px;background:rgba(20,29,56,0.85);color:#fff;font-weight:800;font-size:12px;width:26px;height:26px;border-radius:6px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);z-index:2}
+        .b2b-img-pill-left{position:absolute;bottom:12px;left:12px;background:rgba(20,29,56,0.88);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;backdrop-filter:blur(4px);z-index:2}
+        .b2b-img-pill-right{position:absolute;bottom:12px;right:12px;background:rgba(255,255,255,0.94);color:#141d38;font-size:11px;font-weight:700;padding:4px 10px;border-radius:6px;backdrop-filter:blur(4px);z-index:2;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+        
+        .b2b-card-body{padding:24px 22px;display:flex;flex-direction:column;flex-grow:1}
+        .b2b-card-title{font-size:20px;line-height:1.35;font-weight:800;color:#141d38;margin-bottom:14px}
+        
+        .b2b-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+        .b2b-spec-tag{background:#f1f5f9;color:#475569;font-size:11px;font-weight:700;padding:4px 10px;border-radius:5px;border:1px solid #e2e8f0}
+        
+        .b2b-card-text{font-size:13.5px;line-height:1.55;color:#64748b;margin-bottom:22px;flex-grow:1}
+        
+        .btn-card-quote{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--theme-color);color:#ffffff !important;font-weight:700;font-size:14px;padding:12px 20px;border-radius:8px;text-decoration:none;transition:all .3s ease;width:100%}
+        .btn-card-quote:hover{background:#388032;box-shadow:0 6px 18px rgba(72,155,66,0.35);transform:translateY(-1px)}
+        
+        .b2b-export-assurance{margin-top:45px;padding:18px 24px;background:#ffffff;border:1px dashed #cbd5e1;border-radius:12px;text-align:center}
+        .b2b-export-assurance p{margin:0;font-size:14.5px;font-weight:700;color:#141d38}
+        .b2b-export-assurance span{color:#489B42}
+        
+        /* Mobile Specific Optimization */
+        @media (max-width:767px){
+            .b2b-products-area{padding:50px 0 40px 0}
+            .b2b-sec-title{font-size:26px;line-height:1.3}
+            .b2b-sec-desc{font-size:14px;margin-bottom:28px}
+            .b2b-card-img-wrap{height:200px}
+            .b2b-card-body{padding:18px 16px}
+            .b2b-card-title{font-size:18px}
+            .btn-card-quote{padding:14px;font-size:14.5px;min-height:48px}
+            .b2b-export-assurance{padding:14px 16px;font-size:13px}
+            .b2b-export-assurance p{font-size:13px;line-height:1.5}
         }
     </style>
 
@@ -322,55 +366,103 @@
     </div>
 
 
-    <section class="category-area bg-top-center" data-bg-src="/assets/img/bg/category_bg_1.png">
+    <section class="b2b-products-area" id="products-sec">
         <div class="container th-container">
-            <div class="title-area text-center">
-                <span class="sub-title">The Best Octopus Indonesia For You</span>
-                <h2 class="sec-title">WORLD CLASS GIANT OCTOPUS PRODUCT</h2>
+            <div class="text-center">
+                <span class="b2b-sec-badge"><i class="fas fa-certificate me-1"></i> The Best Octopus Indonesia &bull; Export Grade Specs</span>
+                <h2 class="b2b-sec-title">World-Class Frozen Octopus Products for Global Wholesale</h2>
+                <p class="b2b-sec-desc">Processed in Cirebon under HACCP &amp; EU sanitary standards for international seafood importers, food service chains, and commercial distributors.</p>
             </div>
             
-            <div class="swiper categorySlider" id="categorySlide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="category-card single">
-                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 1.webp" alt="PT Gurita Global Internasional Frozen Octopus Product" width="600" height="450" loading="lazy" decoding="async"></div>
+            <div class="row g-4 justify-content-center">
+                <!-- Product 1: Whole Cleaned Flower Octopus -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="b2b-product-card">
+                        <div class="b2b-card-img-wrap">
+                            <span class="b2b-card-index">1</span>
+                            <img src="/assets/img/category/product-whole-cleaned-octopus.webp" alt="Whole Cleaned Octopus Vulgaris Flower Style Indonesia" class="b2b-card-img" width="800" height="600" loading="lazy" decoding="async">
+                            <span class="b2b-img-pill-left">Grade T1 - T8</span>
+                            <span class="b2b-img-pill-right"><i class="fas fa-check-circle text-success me-1"></i> EU Export Grade</span>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card single">
-                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 2.webp" alt="Frozen Raw Whole Cleaned Octopus Indonesia" width="600" height="450" loading="lazy" decoding="async"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card single">
-                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 3.webp" alt="Blanched Octopus Tentacles Wholesale Indonesia" width="600" height="450" loading="lazy" decoding="async"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card single">
-                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 4.webp" alt="Premium Frozen Octopus Vulgaris GGI Factory" width="600" height="450" loading="lazy" decoding="async"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="category-card single">
-                            <div class="box-img global-img"><img src="/assets/img/category/product-ggi 5.webp" alt="IQF Frozen Octopus Cut Pieces Indonesia" width="600" height="450" loading="lazy" decoding="async"></div>
+                        <div class="b2b-card-body">
+                            <h3 class="b2b-card-title">Whole Cleaned Octopus Vulgaris (Flower Style)</h3>
+                            <div class="b2b-card-tags">
+                                <span class="b2b-spec-tag">IQF Freezing</span>
+                                <span class="b2b-spec-tag">-18&deg;C Reefer</span>
+                                <span class="b2b-spec-tag">Halal Certified</span>
+                                <span class="b2b-spec-tag">Gutted / Eyes Off</span>
+                            </div>
+                            <p class="b2b-card-text">Individually quick frozen wild-caught Octopus Vulgaris, carefully shaped into traditional flower form. Uniform sizing from T1 (3kg+) to T8 (300g-500g) suited for European pulperias and supermarket distribution.</p>
+                            <a href="https://wa.me/6281111808661?text=Hello%20GGI,%20I%20am%20interested%20in%20requesting%20specifications%20and%20quotation%20for%20Whole%20Cleaned%20Octopus%20Vulgaris." class="btn-card-quote" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i> Get Quote &amp; Specs
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+
+                <!-- Product 2: Baby Octopus & Takoyaki Cut -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="b2b-product-card">
+                        <div class="b2b-card-img-wrap">
+                            <span class="b2b-card-index">2</span>
+                            <img src="/assets/img/category/product-baby-octopus-takoyaki.webp" alt="Baby Octopus and Takoyaki Cut Supplier Indonesia" class="b2b-card-img" width="800" height="600" loading="lazy" decoding="async">
+                            <span class="b2b-img-pill-left">20/40 &amp; 40/60 pcs/kg</span>
+                            <span class="b2b-img-pill-right"><i class="fas fa-check-circle text-success me-1"></i> Food Service Grade</span>
+                        </div>
+                        <div class="b2b-card-body">
+                            <h3 class="b2b-card-title">Baby Octopus &amp; Takoyaki Cut</h3>
+                            <div class="b2b-card-tags">
+                                <span class="b2b-spec-tag">IQF Freezing</span>
+                                <span class="b2b-spec-tag">Sand-Free Tumbled</span>
+                                <span class="b2b-spec-tag">Diced &amp; Tentacles</span>
+                                <span class="b2b-spec-tag">Halal Certified</span>
+                            </div>
+                            <p class="b2b-card-text">Pre-cut dices and tender tentacle portions engineered specifically for industrial takoyaki makers, tempura, and Asian food catering. Thoroughly cleaned and tumbled to guarantee 0% ocean sand.</p>
+                            <a href="https://wa.me/6281111808661?text=Hello%20GGI,%20I%20am%20interested%20in%20requesting%20specifications%20and%20quotation%20for%20Baby%20Octopus%20and%20Takoyaki%20Cut." class="btn-card-quote" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i> Get Quote &amp; Specs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Blanched & Cooked Octopus Tentacles -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="b2b-product-card">
+                        <div class="b2b-card-img-wrap">
+                            <span class="b2b-card-index">3</span>
+                            <img src="/assets/img/category/product-blanched-octopus-tentacles.webp" alt="Blanched Cooked Octopus Tentacles Wholesale Indonesia" class="b2b-card-img" width="800" height="600" loading="lazy" decoding="async">
+                            <span class="b2b-img-pill-left">Ready to Cook</span>
+                            <span class="b2b-img-pill-right"><i class="fas fa-check-circle text-success me-1"></i> Gourmet HORECA</span>
+                        </div>
+                        <div class="b2b-card-body">
+                            <h3 class="b2b-card-title">Blanched &amp; Cooked Octopus Tentacles</h3>
+                            <div class="b2b-card-tags">
+                                <span class="b2b-spec-tag">Pre-Boiled</span>
+                                <span class="b2b-spec-tag">Natural Curl</span>
+                                <span class="b2b-spec-tag">0% Additives</span>
+                                <span class="b2b-spec-tag">Vacuum Packed</span>
+                            </div>
+                            <p class="b2b-card-text">Gently blanched to lock in natural moisture, appetizing purple skin, and succulent tenderness. Ready for culinary slicing, carpaccio, grilling, or premium seafood salad retail packs.</p>
+                            <a href="https://wa.me/6281111808661?text=Hello%20GGI,%20I%20am%20interested%20in%20requesting%20specifications%20and%20quotation%20for%20Blanched%20and%20Cooked%20Octopus%20Tentacles." class="btn-card-quote" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i> Get Quote &amp; Specs
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-2 text-center"></div>
-                    <div class="col-8 text-center">
-                        <p>Our premium <a href="https://guritaglobal.com/seafood-octopus-distributor">Frozen Octopus products from Octopus Indonesia</a> are processed using advanced IQF technology to ensure optimum tenderness and freshness. Buying from a direct Indonesian factory allows stable wholesale capacity, long-term shelf storage, and custom processing options from whole cleaned to pre-cooked frozen pieces.</p>
-                    </div>
-                    <div class="col-2 text-center"></div>
-                </div>
+            <!-- Commercial Export Assurance Bar -->
+            <div class="b2b-export-assurance">
+                <p>
+                    <strong>MOQ 1x20ft FCL</strong> &bull; 
+                    <span>CIF &amp; FOB Incoterms</span> &bull; 
+                    <strong>Private Label &amp; Custom Packaging Available</strong> &bull; 
+                    <a href="https://guritaglobal.com/seafood-octopus-distributor" class="text-decoration-underline text-success ms-1">View Full Product Specifications &rarr;</a>
+                </p>
             </div>
         </div>
     </section>
+
 
     <div class="about-area position-relative overflow-hidden space" id="about-sec">
         <div class="container">
