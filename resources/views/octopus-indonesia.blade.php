@@ -183,7 +183,7 @@
         
         /* Modern Static B2B Hero Section */
         .static-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:580px;background:#0d1829;display:flex;align-items:center}
-        .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center}
+        .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center right}
         .hero-inner-b2b{width:100%;padding:140px 0 85px 0;position:relative;z-index:5}
         .hero-style-b2b{max-width:850px;position:relative;z-index:9}
         
@@ -214,7 +214,8 @@
             .hero-trust-bar{grid-template-columns:repeat(2,1fr);gap:15px}
         }
         @media (max-width:767px){
-            .hero-inner-b2b{padding:120px 0 60px 0}
+            .th-hero-bg{background-position:70% center}
+            .hero-inner-b2b{padding:120px 0 60px 0;background:linear-gradient(180deg, rgba(13,24,41,0.85) 0%, rgba(13,24,41,0.92) 100%)}
             .hero-style-b2b{text-align:center}
             .hero-badge-pill{margin-left:auto;margin-right:auto}
             .hero-style-b2b .hero-title{font-size:29px;line-height:1.25}
@@ -233,7 +234,7 @@
     </noscript>
 
     <!-- Instant LCP Hero Image Preload -->
-    <link rel="preload" as="image" href="/assets/img/hero/bg1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/img/hero/hero-b2b-octopus-exporter.webp" fetchpriority="high">
 
     <!-- Non-Blocking Asynchronous CSS (Est savings 2,430ms) -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
@@ -255,7 +256,7 @@
 @section('container')
     <!-- Static High-Converting B2B Hero Section (SEO & GEO Optimized) -->
     <div class="th-hero-wrapper hero static-hero-wrapper" id="hero">
-        <div class="th-hero-bg background-image" style="background-image: linear-gradient(90deg, rgba(13, 24, 41, 0.94) 0%, rgba(13, 24, 41, 0.82) 52%, rgba(13, 24, 41, 0.52) 100%), url('/assets/img/hero/bg1.webp');" data-bg-src="/assets/img/hero/bg1.webp"></div>
+        <div class="th-hero-bg background-image" style="background-image: linear-gradient(90deg, rgba(13, 24, 41, 0.92) 0%, rgba(13, 24, 41, 0.65) 45%, rgba(13, 24, 41, 0.15) 80%, rgba(13, 24, 41, 0.05) 100%), url('/assets/img/hero/hero-b2b-octopus-exporter.webp');" data-bg-src="/assets/img/hero/hero-b2b-octopus-exporter.webp"></div>
         <div class="hero-inner-b2b">
             <div class="container th-container">
                 <div class="hero-style-b2b">
