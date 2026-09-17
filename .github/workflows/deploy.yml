@@ -19,7 +19,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /ggi/
+          server-dir: ggi/
           exclude: |
             **/.git*
             **/.git*/**
@@ -35,7 +35,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
-          server-dir: /public_html/guritaglobal.com/
+          server-dir: public_html/guritaglobal.com/
           exclude: |
             storage
             index.production.php
