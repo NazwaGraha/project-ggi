@@ -188,9 +188,9 @@
         .hero-style-b2b{max-width:850px;position:relative;z-index:9}
         
         /* Logo & Badge Pill Header */
-        .hero-brand-line{display:inline-flex;align-items:center;flex-wrap:wrap;gap:15px;margin-bottom:22px}
-        .hero-brand-logo{height:46px;width:auto;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.6));background:rgba(255,255,255,0.08);padding:5px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(6px)}
-        .hero-badge-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(72,155,66,0.2);border:1px solid rgba(72,155,66,0.5);color:#5be351;padding:7px 18px;border-radius:50px;font-size:13px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase}
+        .hero-brand-line{display:inline-flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+        .hero-brand-logo{height:24px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.5));background:rgba(255,255,255,0.08);padding:3px 8px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(6px)}
+        .hero-badge-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(72,155,66,0.2);border:1px solid rgba(72,155,66,0.5);color:#5be351;padding:6px 16px;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase}
         .pulse-dot{width:8px;height:8px;background-color:#5be351;border-radius:50%;box-shadow:0 0 0 0 rgba(91,227,81,0.7);animation:b2bPulse 2s infinite}
         @keyframes b2bPulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(91,227,81,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0)}}
         
@@ -265,7 +265,7 @@
             <div class="container th-container">
                 <div class="hero-style-b2b">
                     <div class="hero-brand-line">
-                        <img src="/assets/img/GGILogo.webp" alt="PT Gurita Global Internasional - Octopus Indonesia" class="hero-brand-logo" width="140" height="46">
+                        <img src="/assets/img/GGILogo.webp" alt="PT Gurita Global Internasional - Octopus Indonesia" class="hero-brand-logo" width="70" height="24">
                         <div class="hero-badge-pill">
                             <span class="pulse-dot"></span>
                             <span>Official Octopus Indonesia Exporter</span>
