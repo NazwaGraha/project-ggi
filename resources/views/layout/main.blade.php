@@ -211,9 +211,24 @@
     <script src="/assets/js/nice-select.min.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
 
-    <!-- Elfsight Widget (Deferred for PageSpeed 95+) -->
-    <script src="https://static.elfsight.com/platform/platform.js" async defer></script>
+    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle (Boosts Mobile Score to 95+) -->
     <div class="elfsight-app-50c3a093-127b-485f-9740-c336e3ac5849" data-elfsight-app-lazy></div>
+    <script>
+        function loadElfsight() {
+            if (window._elfsightLoaded) return;
+            window._elfsightLoaded = true;
+            var s = document.createElement('script');
+            s.src = 'https://static.elfsight.com/platform/platform.js';
+            s.async = true;
+            s.defer = true;
+            document.body.appendChild(s);
+        }
+        // Load on first user scroll, touch, or after 3.5 seconds
+        ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+            window.addEventListener(e, loadElfsight, { once: true, passive: true });
+        });
+        setTimeout(loadElfsight, 3500);
+    </script>
 </body>
 
 
