@@ -8,61 +8,92 @@
 
     <title>Octopus Indonesia Factory | Premium Frozen Wholesale Supplier</title>
     <meta name="description" content="Looking for a reliable Octopus Indonesia supplier? PT Gurita Global Internasional offers premium wild-caught frozen octopus (HACCP & Halal). Request a bulk quote!">
-    <meta name="keywords" content="Octopus Indonesia, Frozen Octopus Factory, Indonesia Seafood Exporter, Bulk Octopus Supplier, Gurita Global International, Wholesale Octopus Indonesia">
+    <meta name="keywords" content="Octopus Indonesia, Frozen Octopus Factory, Indonesia Seafood Exporter, Bulk Octopus Supplier, Gurita Global International, Wholesale Octopus Indonesia, Best Octopus Indonesia, IQF Octopus Wholesale">
     <meta name="author" content="Gurita Global International">
-    <link rel="canonical" href="https://guritaglobal.com" />
+    <link rel="canonical" href="https://guritaglobal.com/" />
     <meta name="robots" content="index, follow, max-image-preview:large">
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Octopus Indonesia Factory | Premium Frozen Wholesale Supplier">
     <meta property="og:description" content="Looking for a reliable Octopus Indonesia supplier? PT Gurita Global Internasional offers premium wild-caught frozen octopus (HACCP & Halal). Request a bulk quote!">
-    <meta property="og:url" content="https://guritaglobal.com">
+    <meta property="og:url" content="https://guritaglobal.com/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ asset('assets/img/og-image-octopus.jpg') }}"> 
-    <meta property="og:site_name" content="Gurita Global International">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Octopus Indonesia | GGI">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Octopus Indonesia Factory | Premium Frozen Wholesale Supplier">
+    <meta name="twitter:description" content="Looking for a reliable Octopus Indonesia supplier? PT Gurita Global Internasional offers premium wild-caught frozen octopus (HACCP & Halal).">
+    <meta name="twitter:image" content="{{ asset('assets/img/og-image-octopus.jpg') }}">
+
+    <!-- GEO Meta Tags -->
     <meta name="geo.region" content="IT" /><meta name="geo.position" content="42.638426;12.674297" /><meta name="ICBM" content="42.638426, 12.674297" />
+    <meta name="geo.region" content="GR" /><meta name="geo.position" content="38.995368;21.987713" /><meta name="ICBM" content="38.995368, 21.987713" />
     <meta name="geo.region" content="ES" /><meta name="geo.position" content="39.326069;-4.837979" /><meta name="ICBM" content="39.326069, -4.837979" />
     <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
     <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
     <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
     <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
 
+    <!-- hreflang GEO Targeting -->
+    <link rel="alternate" hreflang="en" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="en-it" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="en-es" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="en-fr" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="en-us" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="ja" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="ko" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="id" href="https://guritaglobal.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://guritaglobal.com/" />
+
+    <!-- WebSite Schema JSON-LD (Enables Google Sitelinks Searchbox) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Octopus Indonesia | GGI",
+      "url": "https://guritaglobal.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://guritaglobal.com/post?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Product Schema JSON-LD (B2B Optimized) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "Frozen Octopus Vulgaris Indonesia",
       "image": [
-        "{{ asset('assets/img/normal/pic13.png') }}"
+        "https://guritaglobal.com/assets/img/normal/pic13.webp"
       ],
-      "description": "Premium Frozen Octopus Vulgaris supplied by PT. Gurita Global Internasional for worldwide B2B wholesale.",
+      "description": "Premium Frozen Octopus Vulgaris processed and exported by PT. Gurita Global Internasional for worldwide B2B wholesale.",
       "brand": {
         "@type": "Brand",
         "name": "GGI"
       },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "lowPrice": "0",
-        "highPrice": "0",
-        "offerCount": "1",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "0",
-          "priceCurrency": "USD",
-          "valueAddedTaxIncluded": "false"
-        },
-        "offers": [
-          {
-            "@type": "Offer",
-            "url": "https://guritaglobal.com/",
-            "priceCurrency": "USD",
-            "price": "0",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        ]
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "PT. Gurita Global Internasional",
+        "url": "https://guritaglobal.com"
       }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://guritaglobal.com/"}
+      ]
     }
     </script>
 
@@ -90,12 +121,7 @@
         "contactType": "Sales and Export Inquiries",
         "areaServed": ["IT", "ES", "FR", "GR", "US", "JP", "KR", "CN", "Worldwide"],
         "availableLanguage": ["English", "Indonesian"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/",
-        "https://www.instagram.com/",
-        "https://www.linkedin.com/"
-      ]
+      }
     }
     </script>
 
@@ -318,7 +344,7 @@
                             <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">PT. Gurita Global Internasional</h2>
                             <p class="sec-text mb-30"><b>Octopus Indonesia</b> - PT. Gurita Global Internasional is a B2B premium company born from a big vision to bring high-quality Indonesian seafood to the global market with world-class export standards.</p>
                             <p>We are a certified direct octopus processor and exporter. We act as a trusted bridge between rich Indonesian seas and international buyers across Europe, America, Japan, and Southeast Asia. Through a strict hygienic and sustainable process that complies with international food safety regulations, we guarantee premium quality shipments.</p>
-                            <p>With an extensive global logistics framework, Octopus Indonesia meets consistent commercial volume demands without compromising quality. Partner with us to get the best wholesale factory price for premium bulk frozen octopus supply solutions.</p>
+                            <p>With an extensive global logistics framework, Octopus Indonesia meets consistent commercial volume demands without compromising quality. Partner with us to get the best wholesale factory price for premium bulk frozen octopus supply solutions. <a href="https://guritaglobal.com/best-octopus-indonesia">Learn more about our Indonesian octopus processing company</a> or explore our <a href="https://guritaglobal.com/post">industry news and articles</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -348,4 +374,60 @@
         <div class="shape-mockup d-none d-xl-block" data-top="-25%" data-left="0%"><img src="/assets/img/shape/line.png" alt="Best Octopus Indonesia" width="100" height="100" loading="lazy"></div>
         <div class="shape-mockup movingX d-none d-xl-block" data-top="30%" data-left="3%"><img class="gmovingX" src="/assets/img/shape/shape_4.png" alt="Octopus Indonesia" width="80" height="80" loading="lazy"></div>
     </div>
+
+    <!-- B2B WHOLESALE CAPABILITIES SECTION (FASE 2) -->
+    <section class="space bg-smoke">
+        <div class="container">
+            <div class="title-area text-center mb-40">
+                <span class="sub-title style1">Wholesale Export Capabilities</span>
+                <h2 class="sec-title">Why Source Frozen Octopus from Indonesia (GGI)?</h2>
+                <p class="sec-text" style="max-width: 800px; margin: 0 auto;">PT. Gurita Global Internasional is dedicated to supplying stable, premium-grade wild-caught <strong>Octopus Vulgaris</strong> and related seafood species directly from the nutrient-rich waters of Indonesia (FAO Zones 57 & 71).</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                        <div class="mb-3"><i class="fal fa-industry-alt fa-2x text-success"></i></div>
+                        <h4 class="h5">Direct Factory Supply</h4>
+                        <p class="small text-muted mb-0">Our modern processing plant in Cirebon eliminates intermediary markups, offering competitive factory wholesale FOB and CIF prices for commercial buyers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                        <div class="mb-3"><i class="fal fa-certificate fa-2x text-success"></i></div>
+                        <h4 class="h5">HACCP & Halal Certified</h4>
+                        <p class="small text-muted mb-0">Full international compliance with strict hygiene, trace-back documentation, and official quarantine health certification for seamless customs clearance.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                        <div class="mb-3"><i class="fal fa-snowflake fa-2x text-success"></i></div>
+                        <h4 class="h5">Advanced IQF Freezing</h4>
+                        <p class="small text-muted mb-0">State-of-the-art Individual Quick Freezing locks in ocean-fresh texture, moisture, and flavor without excessive glaze or structural cellular breakdown.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 text-center">
+                        <div class="mb-3"><i class="fal fa-ship fa-2x text-success"></i></div>
+                        <h4 class="h5">FCL Reefer Shipment</h4>
+                        <p class="small text-muted mb-0">Reliable container shipping capacity with continuous cold chain maintenance (-18°C) to major maritime ports across Europe, Asia, and North America.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL EXPORT MARKETS SECTION (FASE 3 GEO) -->
+    <section class="space-bottom pt-5">
+        <div class="container">
+            <div class="p-4 p-lg-5 bg-light rounded text-center">
+                <span class="sub-title style1 text-success">Global Export Reach</span>
+                <h3 class="sec-title mb-3">Supplying Premium Frozen Octopus Worldwide</h3>
+                <p class="sec-text mb-4" style="max-width: 750px; margin: 0 auto;">We regularly fulfill wholesale frozen octopus import requirements for buyers in <strong>Italy, Greece, Spain, France, Japan, South Korea, the United States, and Mexico</strong>. View our technical specifications or connect directly with our export division.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://guritaglobal.com/seafood-octopus-distributor" class="th-btn th-icon m-2">View Product Specifications</a>
+                    <a href="https://guritaglobal.com/contact-us" class="th-btn style2 th-icon m-2">Request Wholesale Quotation</a>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

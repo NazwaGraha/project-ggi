@@ -7,76 +7,105 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     
     <title>Best Octopus Indonesia Supplier | High-Quality Frozen Export Wholesale</title>
-    
-    <meta name="author" content="Gurita Global International By NazwaGraha">
-    
+    <meta name="author" content="Gurita Global International">
     <meta name="description"
-        content="Looking for the best Octopus Indonesia supplier? PT Gurita Global Internasional processing premium frozen octopus under strict international standards. Request a free bulk quote now!">
-    
+        content="Looking for the best Octopus Indonesia supplier? PT Gurita Global Internasional processes premium frozen octopus under strict HACCP & Halal standards. Request a free bulk quote now!">
     <meta name="keywords"
-        content="Best Octopus Indonesia, Octopus Indonesia, Gurita Global International, Indonesian octopus processing company, Indonesian octopus supplier, International octopus seller, Indonesian octopus exporter, High-quality octopus from Indonesia, Indonesian octopus price, Indonesian octopus industry, Fresh octopus from Indonesia, International octopus distributor">
-    <meta name="robots" content="INDEX,FOLLOW">
+        content="Best Octopus Indonesia, Octopus Indonesia, Best Octopus Indonesia Supplier, Gurita Global International, Indonesian octopus processing company, Indonesian octopus supplier, International octopus seller, Indonesian octopus exporter, High-quality octopus from Indonesia, Indonesian octopus price, IQF Octopus Factory, HACCP Certified Octopus">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     
+    <!-- Open Graph -->
     <meta property="og:title" content="Best Octopus Indonesia | Premium Frozen Wholesale Supplier">
     <meta property="og:description"
         content="Premium frozen octopus processing factory in Indonesia. Fully certified for global trade and secure bulk shipment. Contact us for wholesale prices.">
     <meta property="og:url" content="https://guritaglobal.com/best-octopus-indonesia">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <meta property="og:site_name" content="Best Octopus Indonesia | GGI">
-    
-    <meta name="geo.region" content="IT" />
-    <meta name="geo.position" content="42.638426;12.674297" />
-    <meta name="ICBM" content="42.638426, 12.674297" />
-    
-    <meta name="geo.region" content="GR" />
-    <meta name="geo.position" content="38.995368;21.987713" />
-    <meta name="ICBM" content="38.995368, 21.987713" />
-    
-    <meta name="geo.region" content="ES" />
-    <meta name="geo.position" content="39.326069;-4.837979" />
-    <meta name="ICBM" content="39.326069, -4.837979" />
+    <meta property="og:image" content="{{ asset('assets/img/gallery/About 1.png') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-    <meta name="geo.region" content="FR" />
-    <meta name="geo.position" content="46.603354;1.888334" />
-    <meta name="ICBM" content="46.603354, 1.888334" />
-
-    <meta name="geo.region" content="JP" />
-    <meta name="geo.position" content="36.574844;139.239418" />
-    <meta name="ICBM" content="36.574844, 139.239418" />
-
-    <meta name="geo.region" content="MX" />
-    <meta name="geo.placename" content="Ciudad de M&eacute;xico" />
-    <meta name="geo.position" content="19.43263;-99.133178" />
-    <meta name="ICBM" content="19.43263, -99.133178" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Octopus Indonesia Supplier | GGI">
+    <meta name="twitter:description" content="Premium frozen octopus processing factory in Indonesia. Fully certified for global trade and bulk shipment.">
+    <meta name="twitter:image" content="{{ asset('assets/img/gallery/About 1.png') }}">
     
-    <meta name="geo.region" content="US" />
-    <meta name="geo.position" content="39.78373;-100.445882" />
-    <meta name="ICBM" content="39.78373, -100.445882" />
+    <!-- GEO Meta Tags -->
+    <meta name="geo.region" content="IT" /><meta name="geo.position" content="42.638426;12.674297" /><meta name="ICBM" content="42.638426, 12.674297" />
+    <meta name="geo.region" content="GR" /><meta name="geo.position" content="38.995368;21.987713" /><meta name="ICBM" content="38.995368, 21.987713" />
+    <meta name="geo.region" content="ES" /><meta name="geo.position" content="39.326069;-4.837979" /><meta name="ICBM" content="39.326069, -4.837979" />
+    <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
+    <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
+    <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
+    <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
 
-    <meta name="geo.region" content="CN" />
-    <meta name="geo.position" content="35.000066;104.999955" />
-    <meta name="ICBM" content="35.000066, 104.999955" />
-    <meta name="geo.region" content="KR" />
-    <meta name="geo.position" content="36.638392;127.696119" />
-    <meta name="ICBM" content="36.638392, 127.696119" />
-    <meta name="geo.region" content="TH" />
-    <meta name="geo.position" content="14.897192;100.83273" />
-    <meta name="ICBM" content="14.897192, 100.83273" />
+    <!-- hreflang GEO Targeting -->
+    <link rel="alternate" hreflang="en" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="en-it" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="en-es" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="en-us" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="ja" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="ko" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="id" href="https://guritaglobal.com/best-octopus-indonesia" />
+    <link rel="alternate" hreflang="x-default" href="https://guritaglobal.com/best-octopus-indonesia" />
 
     <link rel="canonical" href="https://guritaglobal.com/best-octopus-indonesia" />
     
     <link rel="apple-touch-icon" type="image/png" href="assets/img/GGILogo.png">
     <link rel="icon" type="image/png" href="assets/img/GGILogo.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@200..800&amp;family=Montez&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Non-Blocking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap"></noscript>
+
+    <!-- Non-Blocking Async CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/style.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    </noscript>
+
+    <!-- AboutPage Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About PT. Gurita Global Internasional — Best Octopus Indonesia Supplier",
+      "description": "Learn about PT. Gurita Global Internasional, a premier frozen octopus processor and exporter in Indonesia operating with HACCP and Halal certifications.",
+      "url": "https://guritaglobal.com/best-octopus-indonesia",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "PT. Gurita Global Internasional",
+        "url": "https://guritaglobal.com",
+        "logo": "https://guritaglobal.com/assets/img/GGILogo.webp"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://guritaglobal.com/"},
+        {"@type": "ListItem", "position": 2, "name": "About Us", "item": "https://guritaglobal.com/best-octopus-indonesia"}
+      ]
+    }
+    </script>
+
     <meta name="google-site-verification" content="pf3U3Mu1mm5uf_VORNP49ZcDEAIgBpKR6ufOavORKeM" />
 </head>
 @extends('layout.main')
@@ -84,7 +113,7 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Gurita Global Internasional</h1>
+                <h1 class="breadcumb-title">Best Octopus Indonesia Supplier — PT Gurita Global Internasional</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="/">Home</a></li>
                     <li>About Best <a href="https://guritaglobal.com/">Octopus Indonesia</a> - GGI</li>
@@ -98,13 +127,13 @@
                 <div class="col-xl-7">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="assets/img/gallery/About 2.png" alt="Best Octopus Indonesia" />
+                            <img src="assets/img/gallery/About 2.png" alt="Octopus Indonesia Supplier Processing Line Cirebon" />
                         </div>
                         <div class="img2">
-                            <img src="assets/img/gallery/About 1.png" alt="Best Octopus Indonesia" />
+                            <img src="assets/img/gallery/About 1.png" alt="PT Gurita Global Internasional HACCP Certified Octopus Facility" />
                         </div>
                         <div class="img3 movingX">
-                            <img src="assets/img/gallery/About 5.png" alt="Best Octopus Indonesia" />
+                            <img src="assets/img/gallery/About 5.png" alt="Wild Caught Octopus Vulgaris Indonesia Grade A" />
                         </div>
                     </div>
                 </div>
@@ -112,19 +141,17 @@
                     <div class="ps-xl-4">
                         <div class="title-area mb-20">
                             <span class="sub-title style1">Welcome PT. Gurita Global Internasional</span>
-                            <h5 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">
+                            <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">
                                 <a href="https://guritaglobal.com/">Octopus Indonesia</a> A Pioneer in Octopus Processing and Trade, Connecting Indonesia to the
                                 World
-                            </h5>
+                            </h2>
                         </div>
                         <p class="pe-xl-5">
-                            PT. Gurita Global Internasional is a company dedicated to delivering high-quality octopus
-                            products from Indonesia to the global market. As a leader in the octopus processing and trading
-                            industry, we take pride in bridging the richness of Indonesia’s marine resources with
-                            international markets. With a commitment to excellence and sustainability, we prioritize not
-                            only quality but also the well-being of local communities and environmental conservation.
+                            PT. Gurita Global Internasional is a leading exporter dedicated to delivering high-quality <strong>frozen octopus Indonesia</strong>
+                            products from our HACCP and Halal certified processing plant in Cirebon to the global B2B wholesale market. As a trusted pioneer in the octopus processing and export
+                            industry, we supply premium wild-caught <strong>Octopus Vulgaris</strong> with complete cold chain reliability to Europe, Japan, Korea, and the Americas.
                         </p>
-                        <h6 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">Why Choose PT. Gurita Global Internasional?</h6>
+                        <h3 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">Why Choose PT. Gurita Global Internasional?</h3>
                         <ul>
                             <li>Premium Products: All our products are processed to global quality standards and certified
                                 internationally.</li>
@@ -133,9 +160,9 @@
                             <li>Business Ethics: We conduct business with integrity, prioritizing fairness and transparency
                                 in all aspects of our operations.</li>
                         </ul>
-                        <h5 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">
+                        <h3 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">
                             Our Vision and Mission
-                        </h5>
+                        </h3>
                         <ul>
                             <li><b>Vision: </b>To become a global leader in the octopus processing and trading industry,
                                 focusing on sustainability and innovation.</li>
@@ -171,9 +198,9 @@
                     <div class="ps-xl-4">
                         <div class="title-area mb-20">
                             <span class="sub-title style1">The Strengths of </span>
-                            <h3 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">
+                            <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">
                                 PT. Gurita Global Internasional
-                            </h3>
+                            </h2>
                         </div>
                         <ul>
                             <li><b>Premium Quality Products</b>
@@ -212,13 +239,13 @@
                 <div class="col-xl-7">
                     <div class="img-box3">
                         <div class="img1">
-                            <img src="assets/img/gallery/About 3.png" alt="Best Octopus Indonesia" />
+                            <img src="assets/img/gallery/About 3.png" alt="Frozen Octopus Indonesia IQF Packaging for Export" />
                         </div>
                         <div class="img2">
-                            <img src="assets/img/gallery/About 4.png" alt="Best Octopus Indonesia" />
+                            <img src="assets/img/gallery/About 4.png" alt="Cold Storage Reefer Facility PT Gurita Global Internasional" />
                         </div>
                         <div class="img3 movingX">
-                            <img src="assets/img/gallery/About 6.png" alt="Best Octopus Indonesia" />
+                            <img src="assets/img/gallery/About 6.png" alt="Best Octopus Indonesia Wholesale Supply to Global Markets" />
                         </div>
                     </div>
                 </div>

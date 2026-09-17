@@ -43,13 +43,13 @@ Route::resource('/post', \App\Http\Controllers\PostController::class);
 // Dynamic Sitemap Generator that keeps existing URLs and appends newly published posts
 Route::get('/sitemap.xml', function () {
     $staticUrls = [
-        ['loc' => 'https://guritaglobal.com/', 'priority' => '1.00', 'lastmod' => '2025-01-19T14:08:18+00:00'],
-        ['loc' => 'https://guritaglobal.com/best-octopus-indonesia', 'priority' => '0.80', 'lastmod' => '2025-01-19T14:08:18+00:00'],
-        ['loc' => 'https://guritaglobal.com/seafood-octopus-distributor', 'priority' => '0.80', 'lastmod' => '2025-01-19T14:08:18+00:00'],
-        ['loc' => 'https://guritaglobal.com/post', 'priority' => '0.80', 'lastmod' => '2025-01-19T14:08:18+00:00'],
-        ['loc' => 'https://guritaglobal.com/galery', 'priority' => '0.80', 'lastmod' => '2025-01-19T14:08:18+00:00'],
-        ['loc' => 'https://guritaglobal.com/contact-us', 'priority' => '0.80', 'lastmod' => '2025-01-19T14:08:18+00:00'],
-        ['loc' => 'https://guritaglobal.com/post/gurita-global-internasional-the-best-choice-for-frozen-octopus-supplier-in-indonesia', 'priority' => '0.80', 'lastmod' => '2025-01-19T14:08:18+00:00'],
+        ['loc' => 'https://guritaglobal.com/', 'priority' => '1.00', 'lastmod' => '2026-09-17T20:00:00+00:00'],
+        ['loc' => 'https://guritaglobal.com/best-octopus-indonesia', 'priority' => '0.80', 'lastmod' => '2026-09-17T20:00:00+00:00'],
+        ['loc' => 'https://guritaglobal.com/seafood-octopus-distributor', 'priority' => '0.80', 'lastmod' => '2026-09-17T20:00:00+00:00'],
+        ['loc' => 'https://guritaglobal.com/post', 'priority' => '0.80', 'lastmod' => '2026-09-17T20:00:00+00:00'],
+        ['loc' => 'https://guritaglobal.com/galery', 'priority' => '0.80', 'lastmod' => '2026-09-17T20:00:00+00:00'],
+        ['loc' => 'https://guritaglobal.com/contact-us', 'priority' => '0.80', 'lastmod' => '2026-09-17T20:00:00+00:00'],
+        ['loc' => 'https://guritaglobal.com/post/gurita-global-internasional-the-best-choice-for-frozen-octopus-supplier-in-indonesia', 'priority' => '0.80', 'lastmod' => '2026-09-17T20:00:00+00:00'],
     ];
 
     $posts = [];

@@ -6,77 +6,77 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <meta name="author" content="Gurita Global International By NazwaGraha">
+    <meta name="author" content="Gurita Global International">
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keyword')">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('description')">
-    <meta property="og:url" content="https://guritaglobal.com">
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="@yield('title')">
-    
-        <!-- Eropa-->
-    <meta name="geo.region" content="IT" />
-    <meta name="geo.position" content="42.638426;12.674297" />
-    <meta name="ICBM" content="42.638426, 12.674297" />
-    
-    <meta name="geo.region" content="GR" />
-    <meta name="geo.position" content="38.995368;21.987713" />
-    <meta name="ICBM" content="38.995368, 21.987713" />
-    
-    <meta name="geo.region" content="ES" />
-    <meta name="geo.position" content="39.326069;-4.837979" />
-    <meta name="ICBM" content="39.326069, -4.837979" />
+    <meta property="og:url" content="{{ Request::url() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Octopus Indonesia | GGI">
+    <meta property="og:image" content="@yield('og_image', asset('assets/img/og-image-octopus.jpg'))">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-    <meta name="geo.region" content="FR" />
-    <meta name="geo.position" content="46.603354;1.888334" />
-    <meta name="ICBM" content="46.603354, 1.888334" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title')">
+    <meta name="twitter:description" content="@yield('description')">
+    <meta name="twitter:image" content="@yield('og_image', asset('assets/img/og-image-octopus.jpg'))">
 
-    <!--Japan-->
-    <meta name="geo.region" content="JP" />
-    <meta name="geo.position" content="36.574844;139.239418" />
-    <meta name="ICBM" content="36.574844, 139.239418" />
+    <!-- GEO Meta Tags -->
+    <meta name="geo.region" content="IT" /><meta name="geo.position" content="42.638426;12.674297" /><meta name="ICBM" content="42.638426, 12.674297" />
+    <meta name="geo.region" content="GR" /><meta name="geo.position" content="38.995368;21.987713" /><meta name="ICBM" content="38.995368, 21.987713" />
+    <meta name="geo.region" content="ES" /><meta name="geo.position" content="39.326069;-4.837979" /><meta name="ICBM" content="39.326069, -4.837979" />
+    <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
+    <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
+    <meta name="geo.region" content="MX" /><meta name="geo.position" content="19.43263;-99.133178" /><meta name="ICBM" content="19.43263, -99.133178" />
+    <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
+    <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
+    <meta name="geo.region" content="CN" /><meta name="geo.position" content="35.000066;104.999955" /><meta name="ICBM" content="35.000066, 104.999955" />
 
-    <!--Mexico-->
-    <meta name="geo.region" content="MX" />
-    <meta name="geo.placename" content="Ciudad de M&eacute;xico" />
-    <meta name="geo.position" content="19.43263;-99.133178" />
-    <meta name="ICBM" content="19.43263, -99.133178" />
-    
-    <!--USA-->
-    <meta name="geo.region" content="US" />
-    <meta name="geo.position" content="39.78373;-100.445882" />
-    <meta name="ICBM" content="39.78373, -100.445882" />
+    <!-- hreflang GEO Targeting (Fase 3 — dibaca Google untuk target negara) -->
+    <link rel="alternate" hreflang="en" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="en-it" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="en-es" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="en-fr" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="en-us" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="ja" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="ko" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="id" href="{{ Request::url() }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ Request::url() }}" />
 
-    <!--Asia-->
-    <meta name="geo.region" content="CN" />
-    <meta name="geo.position" content="35.000066;104.999955" />
-    <meta name="ICBM" content="35.000066, 104.999955" />
-    <meta name="geo.region" content="KR" />
-    <meta name="geo.position" content="36.638392;127.696119" />
-    <meta name="ICBM" content="36.638392, 127.696119" />
-    <meta name="geo.region" content="TH" />
-    <meta name="geo.position" content="14.897192;100.83273" />
-    <meta name="ICBM" content="14.897192, 100.83273" />
+    <!-- Canonical (Dynamic per halaman) -->
+    <link rel="canonical" href="@yield('canonical', Request::url())" />
 
-
-    <link rel="canonical" href="https://guritaglobal.com" />
     <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
+    <link rel="apple-touch-icon" type="image/png" href="/assets/img/GGILogo.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@200..800&amp;family=Montez&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Non-Blocking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap"></noscript>
+
+    <!-- Non-Blocking Async CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/style.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/style.min.css">
+        <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    </noscript>
+
     <meta name="google-site-verification" content="pf3U3Mu1mm5uf_VORNP49ZcDEAIgBpKR6ufOavORKeM" />
 </head>
 <script src="https://static.elfsight.com/platform/platform.js" async></script>

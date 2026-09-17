@@ -1,9 +1,53 @@
 @extends('layout.main2')
-@section('title', $post->title . ' | GGI')
+@section('title', $post->title . ' | GGI Octopus Indonesia')
 @section('description', "$post->MetaDescription")
 @section('keyword', "$post->keyword")
+@section('canonical', url('post/' . $post->slug))
+@section('og_image', asset('storage/' . $post->thumbnail))
 
 @section('container')
+    <!-- Article Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ addslashes($post->title) }}",
+      "description": "{{ addslashes($post->MetaDescription) }}",
+      "image": "{{ asset('storage/' . $post->thumbnail) }}",
+      "datePublished": "{{ optional($post->created_at)->toIso8601String() ?? now()->toIso8601String() }}",
+      "dateModified": "{{ optional($post->updated_at)->toIso8601String() ?? now()->toIso8601String() }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ url('post/' . $post->slug) }}"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "PT. Gurita Global Internasional",
+        "url": "https://guritaglobal.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PT. Gurita Global Internasional",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://guritaglobal.com/assets/img/GGILogo.webp"
+        }
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://guritaglobal.com/"},
+        {"@type": "ListItem", "position": 2, "name": "News & Articles", "item": "https://guritaglobal.com/post"},
+        {"@type": "ListItem", "position": 3, "name": "{{ addslashes($post->title) }}", "item": "{{ url('post/' . $post->slug) }}"}
+      ]
+    }
+    </script>
     </header>
 
     <div class="breadcumb-wrapper" data-bg-src="/assets/img/bg/breadcumb-bg.jpg">
