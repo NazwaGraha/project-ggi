@@ -20,6 +20,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ggi/
+          security: loose
+          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
@@ -36,6 +38,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
           server-dir: public_html/guritaglobal.com/
+          security: loose
+          log-level: verbose
           exclude: |
             storage
             index.production.php
