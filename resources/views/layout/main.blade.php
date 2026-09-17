@@ -189,8 +189,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md-6">
-                        <p class="copyright-text">Copyright 2024 <a href="#">GGI</a>. All Rights
-                            Reserved.By <a href="https://nazwagraha.com">NazwaGraha</a></p>
+                        <p class="copyright-text">Copyright &copy; {{ date('Y') }} <a href="https://guritaglobal.com">PT Gurita Global Internasional</a>. All Rights Reserved. By <a href="https://nazwagraha.com" target="_blank" rel="noopener">NazwaGraha</a></p>
                     </div>
                 </div>
             </div>
