@@ -272,10 +272,9 @@
         </div>
         <div class="copyright-wrap" data-bg-src="/assets/img/bg/copyright_bg_1.jpg">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-6">
-                        <p class="copyright-text">Copyright 2024 <a href="https://guritaglobal.com">GGI</a>. All Rights
-                            Reserved.By <a href="https://nazwagraha.com">NazwaGraha</a></p>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <p class="copyright-text mb-0">Copyright &copy; {{ date('Y') }} <a href="https://guritaglobal.com">PT Gurita Global Internasional</a>. All Rights Reserved. By <a href="https://nazwagraha.com" target="_blank" rel="noopener">NazwaGraha</a></p>
                     </div>
                 </div>
             </div>
