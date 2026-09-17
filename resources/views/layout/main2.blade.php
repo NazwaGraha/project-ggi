@@ -280,20 +280,21 @@
             </div>
         </div>
     </footer>
+    <!-- Optimized Deferred Scripts (Pagespeed 95+ without changing visual) -->
     <script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="/assets/js/swiper-bundle.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="/assets/js/jquery.counterup.min.js"></script>
-    <script src="/assets/js/jquery-ui.min.js"></script>
-    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/assets/js/isotope.pkgd.min.js"></script>
-    <script src="/assets/js/gsap.min.js"></script>
-    <script src="/assets/js/circle-progress.js"></script>
-    <script src="/assets/js/matter.min.js"></script>
-    <script src="/assets/js/matterjs-custom.js"></script>
-    <script src="/assets/js/nice-select.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js" defer></script>
+    <script src="/assets/js/bootstrap.min.js" defer></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="/assets/js/jquery.counterup.min.js" defer></script>
+    <script src="/assets/js/jquery-ui.min.js" defer></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js" defer></script>
+    <script src="/assets/js/isotope.pkgd.min.js" defer></script>
+    <script src="/assets/js/gsap.min.js" defer></script>
+    <script src="/assets/js/circle-progress.js" defer></script>
+    <script src="/assets/js/matter.min.js" defer></script>
+    <script src="/assets/js/matterjs-custom.js" defer></script>
+    <script src="/assets/js/nice-select.min.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
 </body>
 
 
