@@ -99,6 +99,48 @@
     }
     </script>
 
+    <!-- SCHEMA JSON-LD: B2B FAQ RICH SNIPPET FOR GOOGLE RANKING 1 (OCTOPUS INDONESIA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity (MOQ) for Frozen Octopus Indonesia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PT. Gurita Global Internasional accommodates commercial wholesale B2B orders with a standard minimum order quantity (MOQ) of 1x20ft or 1x40ft FCL (Full Container Load), shipped under temperature-controlled reefer containers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which species of octopus are supplied by Octopus Indonesia (GGI)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in wild-caught Octopus Vulgaris (Common Octopus), Baby Octopus, and Indonesian rock octopus, processed as Whole Cleaned (gutted, eyes & beak off) and IQF (Individually Quick Frozen) according to buyer specifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What international food safety certifications does Gurita Global Internasional hold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our processing facility complies with international export standards including HACCP (Hazard Analysis Critical Control Point), Good Manufacturing Practices (GMP), and Halal Certification, approved for export to Europe, USA, and Asia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to request a wholesale quotation for Indonesian Octopus export?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "International buyers can directly contact our export sales desk via WhatsApp (+62 811-1180-8661) or email (Guritaglobalinternational@gmail.com) for prompt CIF and FOB price quotations."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="apple-touch-icon" href="assets/img/GGILogo.png">
     <link rel="icon" type="image/png" href="assets/img/GGILogo.png">
     
