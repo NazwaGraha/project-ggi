@@ -184,10 +184,13 @@
         /* Modern Static B2B Hero Section */
         .static-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:580px;background:#0d1829;display:flex;align-items:center}
         .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center right}
-        .hero-inner-b2b{width:100%;padding:140px 0 85px 0;position:relative;z-index:5}
+        .hero-inner-b2b{width:100%;padding:135px 0 80px 0;position:relative;z-index:5}
         .hero-style-b2b{max-width:850px;position:relative;z-index:9}
         
-        .hero-badge-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(72,155,66,0.18);border:1px solid rgba(72,155,66,0.45);color:#5be351;padding:6px 18px;border-radius:50px;font-size:13px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:20px}
+        /* Logo & Badge Pill Header */
+        .hero-brand-line{display:inline-flex;align-items:center;flex-wrap:wrap;gap:15px;margin-bottom:22px}
+        .hero-brand-logo{height:46px;width:auto;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.6));background:rgba(255,255,255,0.08);padding:5px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(6px)}
+        .hero-badge-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(72,155,66,0.2);border:1px solid rgba(72,155,66,0.5);color:#5be351;padding:7px 18px;border-radius:50px;font-size:13px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase}
         .pulse-dot{width:8px;height:8px;background-color:#5be351;border-radius:50%;box-shadow:0 0 0 0 rgba(91,227,81,0.7);animation:b2bPulse 2s infinite}
         @keyframes b2bPulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(91,227,81,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0)}}
         
@@ -217,8 +220,9 @@
             .th-hero-bg{background-position:70% center}
             .hero-inner-b2b{padding:120px 0 60px 0;background:linear-gradient(180deg, rgba(13,24,41,0.85) 0%, rgba(13,24,41,0.92) 100%)}
             .hero-style-b2b{text-align:center}
+            .hero-brand-line{justify-content:center;margin-bottom:18px}
             .hero-badge-pill{margin-left:auto;margin-right:auto}
-            .hero-style-b2b .hero-title{font-size:29px;line-height:1.25}
+            .hero-style-b2b .hero-title{font-size:28px;line-height:1.25}
             .hero-style-b2b .hero-lead{font-size:15px;margin-bottom:25px}
             .b2b-btn-group{justify-content:center;margin-bottom:35px}
             .hero-trust-bar{grid-template-columns:1fr;text-align:left;padding:16px}
@@ -260,22 +264,26 @@
         <div class="hero-inner-b2b">
             <div class="container th-container">
                 <div class="hero-style-b2b">
-                    <div class="hero-badge-pill">
-                        <span class="pulse-dot"></span>
-                        <span>Official Indonesian Seafood Exporter</span>
+                    <div class="hero-brand-line">
+                        <img src="/assets/img/GGILogo.webp" alt="PT Gurita Global Internasional - Octopus Indonesia" class="hero-brand-logo" width="140" height="46">
+                        <div class="hero-badge-pill">
+                            <span class="pulse-dot"></span>
+                            <span>Official Octopus Indonesia Exporter</span>
+                        </div>
                     </div>
-                    <h1 class="hero-title">Indonesia's Leading Frozen Octopus Exporter to Europe, USA &amp; Asia</h1>
+                    <h1 class="hero-title">Leading Frozen Octopus Indonesia Exporter to Europe, USA &amp; Asia</h1>
                     <p class="hero-lead">
                         Direct Cirebon Factory Processing &bull; Wild-Caught <em>Octopus Vulgaris</em> &bull; FCL Reefer Containers (-18&deg;C)
                     </p>
                     <div class="b2b-btn-group">
-                        <a href="https://wa.me/6281111808661?text=Hello%20GGI,%20I%20am%20interested%20in%20requesting%20a%20wholesale%20quotation%20for%20Frozen%20Octopus." class="th-btn btn-quote" target="_blank" rel="noopener">
+                        <a href="https://wa.me/6281111808661?text=Hello%20GGI,%20I%20am%20interested%20in%20requesting%20a%20wholesale%20quotation%20for%20Frozen%20Octopus%20Indonesia." class="th-btn btn-quote" target="_blank" rel="noopener">
                             <i class="fab fa-whatsapp me-2" style="font-size: 1.15em;"></i> Request Wholesale Quote
                         </a> 
                         <a href="https://guritaglobal.com/seafood-octopus-distributor" class="th-btn btn-explore">
                             Explore Export Products <i class="fas fa-arrow-right ms-2"></i>
                         </a>
                     </div>
+
                     
                     <!-- Trust Badges Floating Bar -->
                     <div class="hero-trust-bar">
