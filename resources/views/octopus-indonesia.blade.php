@@ -180,14 +180,48 @@
         .row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
         .align-items-center{align-items:center}
         .justify-content-between{justify-content:space-between}
-        .th-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:500px;background:#141d38}
+        
+        /* Modern Static B2B Hero Section */
+        .static-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:580px;background:#0d1829;display:flex;align-items:center}
         .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center}
-        .hero-style1{position:relative;z-index:9;max-width:700px;padding:130px 0 180px 0}
-        .hero-style1 .sub-title{font-size:18px;font-weight:700;display:block;margin-bottom:10px}
-        .hero-style1 .hero-title{font-size:42px;line-height:1.24;font-weight:800;margin-bottom:30px}
-        .th-btn{display:inline-flex;align-items:center;padding:14px 28px;border-radius:5px;font-weight:700;background:var(--theme-color);color:#fff;text-decoration:none}
-        .th-btn.style2{background:#fff;color:var(--title-color)}
-        @media (max-width:767px){.hero-style1{text-align:center;padding:120px 0 160px 0}.hero-style1 .hero-title{font-size:32px;line-height:1.25}}
+        .hero-inner-b2b{width:100%;padding:140px 0 85px 0;position:relative;z-index:5}
+        .hero-style-b2b{max-width:850px;position:relative;z-index:9}
+        
+        .hero-badge-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(72,155,66,0.18);border:1px solid rgba(72,155,66,0.45);color:#5be351;padding:6px 18px;border-radius:50px;font-size:13px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:20px}
+        .pulse-dot{width:8px;height:8px;background-color:#5be351;border-radius:50%;box-shadow:0 0 0 0 rgba(91,227,81,0.7);animation:b2bPulse 2s infinite}
+        @keyframes b2bPulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(91,227,81,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0)}}
+        
+        .hero-style-b2b .hero-title{color:#ffffff;font-size:46px;line-height:1.2;font-weight:800;margin-bottom:18px;letter-spacing:-0.5px}
+        .hero-style-b2b .hero-lead{color:#d6deec;font-size:18px;line-height:1.55;margin-bottom:34px;font-weight:500}
+        
+        .b2b-btn-group{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:45px}
+        .th-btn{display:inline-flex;align-items:center;padding:15px 30px;border-radius:6px;font-weight:700;text-decoration:none;transition:all .3s ease}
+        .btn-quote{background:var(--theme-color);color:#ffffff !important;box-shadow:0 8px 25px rgba(72,155,66,0.4)}
+        .btn-quote:hover{background:#3a8234;transform:translateY(-2px);box-shadow:0 12px 28px rgba(72,155,66,0.5)}
+        .btn-explore{background:rgba(255,255,255,0.12);color:#ffffff !important;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(4px)}
+        .btn-explore:hover{background:#ffffff;color:#141d38 !important;transform:translateY(-2px)}
+        
+        /* Floating Trust Badges Bar */
+        .hero-trust-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:rgba(13,24,41,0.78);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);border-radius:12px;padding:18px 24px;max-width:850px}
+        .trust-item{display:flex;align-items:center;gap:12px}
+        .trust-icon{width:40px;height:40px;border-radius:8px;background:rgba(72,155,66,0.22);color:#5be351;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+        .trust-text{display:flex;flex-direction:column}
+        .trust-text strong{color:#ffffff;font-size:14px;line-height:1.2;font-weight:700}
+        .trust-text span{color:#98a5bd;font-size:12px;line-height:1.3}
+        
+        @media (max-width:991px){
+            .hero-style-b2b .hero-title{font-size:36px}
+            .hero-trust-bar{grid-template-columns:repeat(2,1fr);gap:15px}
+        }
+        @media (max-width:767px){
+            .hero-inner-b2b{padding:120px 0 60px 0}
+            .hero-style-b2b{text-align:center}
+            .hero-badge-pill{margin-left:auto;margin-right:auto}
+            .hero-style-b2b .hero-title{font-size:29px;line-height:1.25}
+            .hero-style-b2b .hero-lead{font-size:15px;margin-bottom:25px}
+            .b2b-btn-group{justify-content:center;margin-bottom:35px}
+            .hero-trust-bar{grid-template-columns:1fr;text-align:left;padding:16px}
+        }
     </style>
 
     <!-- Optimized Font Preconnect & Non-Blocking Google Fonts -->
@@ -219,63 +253,65 @@
 </head>
 @extends('layout.main')
 @section('container')
-    <div class="th-hero-wrapper hero" id="hero">
-        <div class="swiper th-slider hero-slider-1" id="heroSlide1"
-            data-slider-options='{"effect":"fade","menu": ["", "", ""],"heroSlide1": {"swiper-container": {"pagination": {"el": ".swiper-pagination", "clickable": true }}}}'>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="hero-inner">
-                        <div class="th-hero-bg background-image" style="background-image: url('/assets/img/hero/bg1.webp');" data-bg-src="/assets/img/hero/bg1.webp"></div>
-                        <div class="container">
-                            <div class="hero-style1">
-                                <span class="sub-title style1" data-ani="slideinup" data-ani-delay="0.2s" style="color: green;">Gurita Global Internasional</span>
-                                <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.4s" style="color: green;">Premium Octopus Indonesia Supplier</h1>
-                                <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
-                                    <a href="https://guritaglobal.com/seafood-octopus-distributor" class="th-btn th-icon">Our Products</a> 
-                                    <a href="https://guritaglobal.com/galery" class="th-btn style2 th-icon">Gallery Factory</a>
-                                </div>
+    <!-- Static High-Converting B2B Hero Section (SEO & GEO Optimized) -->
+    <div class="th-hero-wrapper hero static-hero-wrapper" id="hero">
+        <div class="th-hero-bg background-image" style="background-image: linear-gradient(90deg, rgba(13, 24, 41, 0.94) 0%, rgba(13, 24, 41, 0.82) 52%, rgba(13, 24, 41, 0.52) 100%), url('/assets/img/hero/bg1.webp');" data-bg-src="/assets/img/hero/bg1.webp"></div>
+        <div class="hero-inner-b2b">
+            <div class="container th-container">
+                <div class="hero-style-b2b">
+                    <div class="hero-badge-pill">
+                        <span class="pulse-dot"></span>
+                        <span>Official Indonesian Seafood Exporter</span>
+                    </div>
+                    <h1 class="hero-title">Indonesia's Leading Frozen Octopus Exporter to Europe, USA &amp; Asia</h1>
+                    <p class="hero-lead">
+                        Direct Cirebon Factory Processing &bull; Wild-Caught <em>Octopus Vulgaris</em> &bull; FCL Reefer Containers (-18&deg;C)
+                    </p>
+                    <div class="b2b-btn-group">
+                        <a href="https://wa.me/6281111808661?text=Hello%20GGI,%20I%20am%20interested%20in%20requesting%20a%20wholesale%20quotation%20for%20Frozen%20Octopus." class="th-btn btn-quote" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp me-2" style="font-size: 1.15em;"></i> Request Wholesale Quote
+                        </a> 
+                        <a href="https://guritaglobal.com/seafood-octopus-distributor" class="th-btn btn-explore">
+                            Explore Export Products <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Badges Floating Bar -->
+                    <div class="hero-trust-bar">
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="trust-text">
+                                <strong>HACCP &amp; Halal</strong>
+                                <span>Certified Plant</span>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fas fa-globe"></i></div>
+                            <div class="trust-text">
+                                <strong>EU Standard</strong>
+                                <span>Strict Compliance</span>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fas fa-industry"></i></div>
+                            <div class="trust-text">
+                                <strong>Direct Factory</strong>
+                                <span>Competitive Price</span>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-icon"><i class="fas fa-ship"></i></div>
+                            <div class="trust-text">
+                                <strong>FCL Reefer</strong>
+                                <span>Supplying 15+ Countries</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" aria-hidden="true">
-                    <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="/assets/img/hero/bg2.webp"></div>
-                        <div class="container">
-                            <div class="hero-style1">
-                                <span class="sub-title style1" style="color: green;">Gurita Global Internasional</span>
-                                <span class="hero-title h1 d-block font-weight-bold" style="color: green;">Frozen Octopus Indonesia Factory</span>
-                                <div class="btn-group">
-                                    <a href="https://guritaglobal.com/seafood-octopus-distributor" class="th-btn th-icon">Our Products</a> 
-                                    <a href="https://guritaglobal.com/galery" class="th-btn style2 th-icon">Gallery Factory</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide" aria-hidden="true">
-                    <div class="hero-inner">
-                        <div class="th-hero-bg" data-bg-src="/assets/img/hero/bg3.webp"></div>
-                        <div class="container">
-                            <div class="hero-style1">
-                                <span class="sub-title style1" style="color: green;">Gurita Global Internasional</span>
-                                <span class="hero-title h1 d-block font-weight-bold" style="color: green;">Octopus Indonesian Seafood Exporter</span>
-                                <div class="btn-group">
-                                    <a href="https://guritaglobal.com/seafood-octopus-distributor" class="th-btn th-icon">Our Products</a> 
-                                    <a href="https://guritaglobal.com/galery" class="th-btn style2 th-icon">Gallery Factory</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="th-swiper-custom">
-                <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev" aria-label="Previous Slide"><img src="/assets/img/icon/right-arrow.svg" alt="Previous Slide" width="24" height="24"></button>
-                <div class="slider-pagination"></div>
-                <button data-slider-next="#heroSlide1" class="slider-arrow slider-next" aria-label="Next Slide"><img src="/assets/img/icon/left-arrow.svg" alt="Next Slide" width="24" height="24"></button>
             </div>
         </div>
     </div>
+
 
     <section class="category-area bg-top-center" data-bg-src="/assets/img/bg/category_bg_1.png">
         <div class="container th-container">
