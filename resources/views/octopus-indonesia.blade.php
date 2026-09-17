@@ -150,13 +150,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap" rel="stylesheet">
 
     <!-- LCP Hero Image Preload for Instant Mobile Paint -->
-    <link rel="preload" as="image" href="assets/img/hero/bg1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/img/hero/bg1.webp" fetchpriority="high">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Critical CSS Loaded Directly -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Non-critical CSS Preloaded (Eliminates Render-Blocking 2.4s) -->
+    <link rel="preload" href="/assets/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/assets/css/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/assets/css/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    </noscript>
 
     <meta name="google-site-verification" content="pf3U3Mu1mm5uf_VORNP49ZcDEAIgBpKR6ufOavORKeM" />
 </head>
@@ -213,9 +221,9 @@
                 </div>
             </div>
             <div class="th-swiper-custom">
-                <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev"><img src="assets/img/icon/right-arrow.svg" alt=""></button>
+                <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev" aria-label="Previous Slide"><img src="/assets/img/icon/right-arrow.svg" alt="Previous Slide" width="24" height="24"></button>
                 <div class="slider-pagination"></div>
-                <button data-slider-next="#heroSlide1" class="slider-arrow slider-next"><img src="assets/img/icon/left-arrow.svg" alt="Octopus Indonesia"></button>
+                <button data-slider-next="#heroSlide1" class="slider-arrow slider-next" aria-label="Next Slide"><img src="/assets/img/icon/left-arrow.svg" alt="Next Slide" width="24" height="24"></button>
             </div>
         </div>
     </div>

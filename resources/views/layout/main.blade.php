@@ -16,8 +16,8 @@
     </div>
 
    <div class="th-menu-wrapper onepage-nav">
-        <div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo"><a href="https://guritaglobal.com"><img src="assets/img/GGILogo.webp" alt="Octopus Indonesia" width="140"></a></div>
+        <div class="th-menu-area text-center"><button class="th-menu-toggle" aria-label="Close Mobile Menu"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" alt="Octopus Indonesia" width="140" height="70"></a></div>
             <div class="th-mobile-menu">
                 <ul>
                     <li><a href="https://guritaglobal.com">Home</a></li>
@@ -63,8 +63,8 @@
                 <div class="container th-container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="https://guritaglobal.com"><img src="assets/img/GGILogo.webp"
-                                        width="150" alt="Octopus Indonesia"></a></div>
+                            <div class="header-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp"
+                                        width="150" height="75" alt="Octopus Indonesia"></a></div>
                         </div>
                         <div class="col-auto me-xl-auto">
                             <nav class="main-menu d-none d-xl-inline-block">
@@ -77,7 +77,7 @@
                                 <li><a href="https://guritaglobal.com/contact-us">Contact Us</a></li>
 
                                 </ul>
-                            </nav><button type="button" class="th-menu-toggle d-block d-xl-none"><i
+                            </nav><button type="button" class="th-menu-toggle d-block d-xl-none" aria-label="Open Mobile Menu"><i
                                     class="far fa-bars"></i></button>
                         </div>
                         <div class="col-auto d-none d-xl-block">
@@ -108,14 +108,14 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo"><a href="https://guritaglobal.com"><img
-                                            src="assets/img/GGILogo.webp" width="130" alt="Octopus Indonesia"></a></div>
+                                            src="/assets/img/GGILogo.webp" width="130" height="65" alt="Octopus Indonesia"></a></div>
                                 <p class="about-text">Octopus Indonesia is an octopus specialized processing and
                                     trading company in Indonesia.</p>
-                                <div class="th-social"><a href="https://www.facebook.com/"><i
-                                            class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i
-                                            class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i
-                                            class="fab fa-linkedin-in"></i></a> <a href="https://www.whatsapp.com/"><i
-                                            class="fab fa-whatsapp"></i></a> <a href="https://instagram.com/"><i
+                                <div class="th-social"><a href="https://www.facebook.com/" aria-label="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/" aria-label="Twitter"><i
+                                            class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i
+                                            class="fab fa-linkedin-in"></i></a> <a href="https://www.whatsapp.com/" aria-label="WhatsApp"><i
+                                            class="fab fa-whatsapp"></i></a> <a href="https://instagram.com/" aria-label="Instagram"><i
                                             class="fab fa-instagram"></i></a></div>
                             </div>
                         </div>
