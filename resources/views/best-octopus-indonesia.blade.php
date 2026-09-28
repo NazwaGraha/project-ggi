@@ -103,6 +103,8 @@
         @media (min-width:768px){
             .col-md-6{flex:0 0 50%;max-width:50%}
             .col-md-4{flex:0 0 33.333333%;max-width:33.333333%}
+            .col-md-2{flex:0 0 16.666667%;max-width:16.666667%}
+            .col-md-auto{flex:0 0 auto;width:auto}
             .d-md-block{display:block !important}
         }
         @media (min-width:992px){
@@ -227,6 +229,50 @@
             .about-cta-banner h3{font-size:21px}
             .about-cta-btns{flex-direction:column}
             .btn-cta-quote,.btn-cta-explore{width:100%;justify-content:center}
+        }
+
+        /* Complete Dark Navy Footer Styling (Matching Layout & Design System) */
+        .footer-wrapper{background-color:#141d38;color:#a4b3cb;font-size:14px;position:relative;z-index:2;overflow:hidden}
+        .footer-wrapper a{color:#a4b3cb;transition:color .2s ease}
+        .footer-wrapper a:hover{color:#ffffff}
+        .widget-area{padding:65px 0 35px 0}
+        .footer-widget{margin-bottom:30px}
+        .widget_title{font-size:18px;font-weight:700;color:#ffffff;margin-top:0;margin-bottom:22px;position:relative;padding-bottom:10px}
+        .widget_title:after{content:'';position:absolute;left:0;bottom:0;width:35px;height:2px;background:var(--theme-color)}
+        .about-logo{margin-bottom:18px}
+        .about-logo img{max-height:46px;max-width:100px;width:auto;height:auto;object-fit:contain}
+        .about-text{margin-bottom:20px;line-height:1.65;font-size:14px;color:#a4b3cb}
+        .th-social{display:flex;gap:10px;align-items:center}
+        .th-social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:#ffffff;transition:background-color .2s ease,transform .2s ease}
+        .th-social a:hover{background-color:var(--theme-color);transform:translateY(-2px)}
+        .menu-all-pages-container ul{margin:0;padding:0;list-style:none}
+        .menu-all-pages-container ul li{margin-bottom:11px}
+        .menu-all-pages-container ul li a{color:#a4b3cb;font-size:14px;display:inline-block;transition:color .2s ease,transform .2s ease}
+        .menu-all-pages-container ul li a:hover{color:#5be351;transform:translateX(3px)}
+        .th-widget-contact .info-box_text{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
+        .th-widget-contact .info-box_text .icon{flex-shrink:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+        .th-widget-contact .info-box_text .icon img{filter:brightness(0) invert(1);width:20px;height:20px}
+        .th-widget-contact .info-box_text .details p{margin:0;line-height:1.55;font-size:13.5px;color:#a4b3cb}
+        .th-widget-contact .info-box_text .details a{color:#ffffff;font-weight:600}
+        .th-widget-contact .info-box_text .details a:hover{color:var(--theme-color)}
+        .sidebar-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+        .sidebar-gallery .gallery-thumb{border-radius:6px;overflow:hidden;background:#0d1829}
+        .sidebar-gallery .gallery-thumb img{width:100%;height:75px;object-fit:cover;transition:transform .3s ease;display:block}
+        .sidebar-gallery .gallery-thumb:hover img{transform:scale(1.08)}
+        .copyright-wrap{padding:18px 0;background-color:#0d1829;border-top:1px solid rgba(255,255,255,0.08);font-size:13px;color:#7f8fa4}
+        .copyright-text{margin:0;color:#7f8fa4;font-size:13.5px}
+        .copyright-text a{color:#ffffff;font-weight:600}
+        .copyright-text a:hover{color:var(--theme-color)}
+        .footer-links ul{margin:0;padding:0;list-style:none;display:flex;gap:20px;justify-content:flex-end}
+        .footer-links a{color:#7f8fa4;font-size:13px;transition:color .2s ease}
+        .footer-links a:hover{color:#ffffff}
+        @media (min-width:768px) and (max-width:1199px){
+            .footer-wrapper .col-md-2{flex:0 0 50%;max-width:50%}
+        }
+        @media (max-width:767px){
+            .widget-area{padding:45px 0 20px 0}
+            .copyright-wrap{text-align:center}
+            .footer-links ul{justify-content:center;margin-top:10px}
         }
     </style>
 
