@@ -300,7 +300,7 @@
         "https://guritaglobal.com/assets/img/gallery/Product-3.webp",
         "https://guritaglobal.com/assets/img/gallery/Product-4.webp"
       ],
-      "description": "Premium wild-caught frozen octopus processed under strict HACCP and Halal standards by PT Gurita Global Internasional. Available in Whole Cleaned, Baby Octopus, Tentacles, and Takoyaki Cuts for B2B export to Europe, USA, Japan, and Korea.",
+      "description": "Premium wild-caught frozen octopus processed under strict HACCP and Halal standards by PT Gurita Global Internasional. Available in Whole Cleaned, Frozen Octopus (T1–T8 standard calibrations), Tentacles, and Takoyaki Cuts for B2B export to Europe, USA, Japan, and Korea.",
       "brand": {
         "@type": "Brand",
         "name": "PT. Gurita Global Internasional"
@@ -433,24 +433,26 @@
                     </div>
                 </div>
 
-                <!-- Product 2: Frozen Baby Octopus IQF -->
+                <!-- Product 2: Frozen Octopus (T1-T8 International Standards) -->
                 <div class="product-card">
                     <div class="card-img-wrap">
-                        <img src="/assets/img/gallery/Product-2.webp" alt="Frozen Baby Octopus IQF Indonesia" width="300" height="210" loading="eager" decoding="async">
-                        <div class="card-tag-iqf">IQF WHOLE CLEANED</div>
+                        <img src="/assets/img/gallery/Product-2.webp" alt="Frozen Octopus Vulgaris Indonesia International Standard Sizes" width="300" height="210" loading="eager" decoding="async">
+                        <div class="card-tag-iqf">IQF / BLOCK</div>
                         <div class="card-tag-origin">FAO 57 / 71</div>
                     </div>
                     <div class="card-body">
-                        <h3>Frozen Baby Octopus</h3>
-                        <p class="card-desc">Tender whole cleaned baby octopus with high yield. Ideal for retail packs, supermarket chains, and Asian cuisine.</p>
+                        <h3>Frozen Octopus</h3>
+                        <p class="card-desc">Wild-caught Octopus Vulgaris, available whole cleaned or whole round. IQF or block frozen, graded strictly to international T1–T8 export standards.</p>
                         <div class="spec-pills">
-                            <span class="spec-pill">15-25g</span>
-                            <span class="spec-pill">25-40g</span>
-                            <span class="spec-pill">40-60g</span>
+                            <span class="spec-pill">T8 (300-500g)</span>
+                            <span class="spec-pill">T7 (500-800g)</span>
+                            <span class="spec-pill">T6 (800-1200g)</span>
+                            <span class="spec-pill">T4-T5 (1.2-2kg)</span>
+                            <span class="spec-pill">T1-T3 (2-4kg+)</span>
                             <span class="spec-pill cert">HACCP</span>
                             <span class="spec-pill cert">Halal</span>
                         </div>
-                        <a href="https://api.whatsapp.com/send?phone=6281111808661&text=Hello%20GGI,%20I%20am%20interested%20in%20Frozen%20Baby%20Octopus%20IQF%20wholesale%20quote." target="_blank" rel="noopener noreferrer" class="btn-card-quote">
+                        <a href="https://api.whatsapp.com/send?phone=6281111808661&text=Hello%20GGI,%20I%20am%20interested%20in%20Frozen%20Octopus%20international%20standard%20sizes%20wholesale%20quote." target="_blank" rel="noopener noreferrer" class="btn-card-quote">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                             <span>Request Wholesale Quote</span>
                         </a>
@@ -538,6 +540,11 @@
                             <td>Individually Quick Frozen (IQF), Semi-IQF, or Interleaved Block Frozen</td>
                         </tr>
                         <tr>
+                            <td><strong>Size Grading & Calibration</strong></td>
+                            <td>International T-Grade Standards (T1 to T8) & Gram Calibrations</td>
+                            <td>T1 (&gt;4kg), T2 (3–4kg), T3 (2–3kg), T4 (1.5–2kg), T5 (1.2–1.5kg), T6 (800–1200g), T7 (500–800g), T8 (300–500g). Custom grading per buyer requirements.</td>
+                        </tr>
+                        <tr>
                             <td><strong>Glazing Percentage</strong></td>
                             <td>0% (100% Net Weight) to 10% Protective Water Glaze</td>
                             <td>Tailored strictly according to destination country import regulations</td>
@@ -600,7 +607,7 @@
                     </h4>
                     <ul>
                         <li><strong>IQF W/C Ball Type:</strong> Calibrated 1/2 to 8 Lbs up</li>
-                        <li><strong>Baby Octopus:</strong> 20/40 count per kg</li>
+                        <li><strong>Frozen Octopus:</strong> Graded 1/2 to 8 lbs up (T1–T8 international sizes)</li>
                         <li><strong>Packaging:</strong> US-FDA compliant retail and wholesale polybags</li>
                     </ul>
                 </div>
@@ -612,7 +619,7 @@
                     </h4>
                     <ul>
                         <li><strong>Interleaved Block:</strong> Whole Cleaned & Whole Round</li>
-                        <li><strong>Baby Octopus IQF:</strong> 15–25g, 25–40g for hotpot & stir-fry</li>
+                        <li><strong>Frozen Octopus IQF:</strong> Calibrated 300–500g, 500–800g, 800–1200g up to 3kg+</li>
                         <li><strong>High Capacity:</strong> Continuous scheduled container lines</li>
                     </ul>
                 </div>
