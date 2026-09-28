@@ -94,9 +94,10 @@ h1,h2,h3,h4,h5,h6{color:var(--title-color);font-weight:800;line-height:1.25;marg
 .header-right{display:flex;align-items:center}
 
 .sticky-wrapper{position:relative;z-index:10;width:100%;background:#fff}
-.menu-area{padding:10px 0;background:#fff}
+.header-logo{display:flex;align-items:center}
 .header-logo a{display:inline-block;line-height:0}
-.header-logo img{height:46px;width:auto;max-width:140px;object-fit:contain;display:block}
+.header-logo img{height:44px !important;max-height:44px !important;width:auto !important;max-width:95px !important;object-fit:contain !important;display:block !important}
+@media (max-width:767px){.header-logo img{height:36px !important;max-height:36px !important;max-width:80px !important}}
 
 .main-menu{position:relative;padding-left:30px}
 .main-menu ul{margin:0;padding:0;list-style:none;display:flex;align-items:center;gap:24px}

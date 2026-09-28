@@ -1,6 +1,6 @@
 <div class="th-menu-wrapper onepage-nav">
     <div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="mobile-logo"><a href="https://guritaglobal.com"><img src="assets/img/GGILogo.png" alt="octopus indonesia" width="120"></a></div>
+        <div class="mobile-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" alt="octopus indonesia" width="90" height="52" style="height: 40px; max-height: 40px; width: auto; max-width: 90px; object-fit: contain; margin: 0 auto; display: block;"></a></div>
         <div class="th-mobile-menu">
             <ul>
                 <li><a href="https://guritaglobal.com">Home</a></li>

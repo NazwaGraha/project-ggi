@@ -153,8 +153,8 @@
                 <div class="container th-container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" width="150"
-                                        alt="Octopus Indonesia"></a></div>
+                            <div class="header-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" width="90" height="52"
+                                        alt="Octopus Indonesia" style="height: 44px; max-height: 44px; width: auto; max-width: 95px; object-fit: contain; display: block;"></a></div>
                         </div>
                         <div class="col-auto me-xl-auto">
                             <nav class="main-menu d-none d-xl-inline-block">

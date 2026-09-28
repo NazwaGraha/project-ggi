@@ -12,7 +12,7 @@
 
    <div class="th-menu-wrapper onepage-nav">
         <div class="th-menu-area text-center"><button class="th-menu-toggle" aria-label="Close Mobile Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-            <div class="mobile-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" alt="Octopus Indonesia" width="140" height="70"></a></div>
+            <div class="mobile-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" alt="Octopus Indonesia" width="90" height="52" style="height: 42px; max-height: 42px; width: auto; max-width: 90px; object-fit: contain; margin: 0 auto; display: block;"></a></div>
             <div class="th-mobile-menu">
                 <ul>
                     <li><a href="https://guritaglobal.com">Home</a></li>
@@ -62,7 +62,8 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp"
-                                        width="140" height="48" alt="Octopus Indonesia"></a></div>
+                                        width="90" height="52" alt="Octopus Indonesia"
+                                        style="height: 44px; max-height: 44px; width: auto; max-width: 95px; object-fit: contain; display: block;"></a></div>
                         </div>
                         <div class="col-auto me-xl-auto">
                             <nav class="main-menu d-none d-xl-inline-block">
@@ -103,7 +104,8 @@
                         <div class="widget footer-widget">
                             <div class="th-widget-about">
                                 <div class="about-logo"><a href="https://guritaglobal.com"><img
-                                            src="/assets/img/GGILogo.webp" width="130" height="50" alt="Octopus Indonesia"></a></div>
+                                            src="/assets/img/GGILogo.webp" width="100" height="58" alt="Octopus Indonesia"
+                                            style="height: 46px; max-height: 46px; width: auto; max-width: 100px; object-fit: contain; display: block;"></a></div>
                                 <p class="about-text">Octopus Indonesia is an octopus specialized processing and
                                     trading company in Indonesia.</p>
                                 <div class="th-social">
