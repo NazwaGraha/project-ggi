@@ -9,11 +9,6 @@
 </script>
 
 <body>
-    <!-- Interactive cursor disabled on touch devices via CSS for mobile performance -->
-    <div class="magic-cursor relative z-10 d-none d-lg-block">
-        <div class="cursor"></div>
-        <div class="cursor-follower"></div>
-    </div>
 
    <div class="th-menu-wrapper onepage-nav">
         <div class="th-menu-area text-center"><button class="th-menu-toggle" aria-label="Close Mobile Menu"><i class="fal fa-times"></i></button>
@@ -195,19 +190,13 @@
             </div>
         </div>
     </footer>
-    <!-- Optimized Deferred Scripts (Pagespeed 95+ without changing visual) -->
+    <!-- Optimized Deferred Scripts -->
     <script src="/assets/js/vendor/jquery-3.6.0.min.js" defer></script>
-    <script src="/assets/js/swiper-bundle.min.js" defer></script>
     <script src="/assets/js/bootstrap.min.js" defer></script>
     <script src="/assets/js/jquery.magnific-popup.min.js" defer></script>
-    <script src="/assets/js/jquery.counterup.min.js" defer></script>
-    <script src="/assets/js/jquery-ui.min.js" defer></script>
-    <script src="/assets/js/imagesloaded.pkgd.min.js" defer></script>
-    <script src="/assets/js/gsap.min.js" defer></script>
-    <script src="/assets/js/nice-select.min.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
 
-    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle (Boosts Mobile Score to 95+) -->
+    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle -->
     <div class="elfsight-app-50c3a093-127b-485f-9740-c336e3ac5849" data-elfsight-app-lazy></div>
     <script>
         function loadElfsight() {
@@ -219,11 +208,11 @@
             s.defer = true;
             document.body.appendChild(s);
         }
-        // Load on first user scroll, touch, or after 3.5 seconds
-        ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+        // Load on first user interaction (scroll, touch, click) or 7s idle fallback
+        ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
             window.addEventListener(e, loadElfsight, { once: true, passive: true });
         });
-        setTimeout(loadElfsight, 3500);
+        setTimeout(loadElfsight, 7000);
     </script>
 </body>
 

@@ -170,21 +170,78 @@
     <link rel="apple-touch-icon" href="/assets/img/GGILogo.png">
     <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
     
-    <!-- Critical Above-The-Fold Inline Styles (Eliminates FOUC & Render-Blocking) -->
+    <!-- Critical Above-The-Fold Inline Styles (Eliminates FOUC, LCP Delay & Layout Shift) -->
     <style>
         :root{--theme-color:#489B42;--title-color:#141d38;--body-color:#737887;--white-color:#ffffff;}
         *,::after,::before{box-sizing:border-box}
-        body{margin:0;font-family:'Manrope',sans-serif;font-size:16px;font-weight:400;color:var(--body-color);line-height:28px;overflow-x:hidden}
+        body{margin:0;font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;color:var(--body-color);line-height:28px;overflow-x:hidden;background:#fff}
+
+        /* Off-canvas mobile menu (Critical to prevent CLS: 0.59 -> 0.00) */
+        .th-menu-wrapper{position:fixed;top:0;left:0;bottom:0;width:100%;height:100%;z-index:999999;background-color:rgba(0,0,0,0.6);opacity:0;visibility:hidden;pointer-events:none;transition:opacity ease .4s,visibility ease .4s}
+        .th-menu-wrapper.th-body-visible{opacity:1;visibility:visible;pointer-events:auto}
+        .th-menu-wrapper .th-menu-area{width:100%;max-width:310px;background:#fff;height:100%;position:relative;left:-100%;padding:30px 20px;overflow-y:auto;transition:left ease .4s}
+        .th-menu-wrapper.th-body-visible .th-menu-area{left:0}
+
+        /* Header & Navigation Layout (Eliminates Header Jumps) */
         .th-header{position:relative;z-index:41;width:100%;background:#fff}
+        .header-top{position:relative;padding:6px 0;border-bottom:1px solid #e1e4e5;background:#fff;font-size:14px}
+        .header-links ul{margin:0;padding:0;list-style:none;display:flex;align-items:center;gap:15px}
+        .header-links li{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#737887}
+        .header-links a{color:inherit;text-decoration:none}
+        .header-right{display:flex;align-items:center}
+
+        .sticky-wrapper{position:relative;z-index:10;width:100%}
+        .menu-area{padding:10px 0;background:#fff}
+        .header-logo a{display:inline-block;line-height:0}
+        .header-logo img{height:50px;width:auto;max-width:150px;object-fit:contain;display:block}
+
+        .main-menu{position:relative}
+        .main-menu ul{margin:0;padding:0;list-style:none;display:flex;align-items:center;gap:22px}
+        .main-menu ul li a{font-weight:700;color:#141d38;text-decoration:none;font-size:15px;transition:color .3s ease}
+        .main-menu ul li a:hover{color:var(--theme-color)}
+
+        .th-menu-toggle{background:transparent;border:none;font-size:24px;color:#141d38;cursor:pointer;padding:6px 10px;line-height:1}
+
+        .th-btn{display:inline-flex;align-items:center;padding:12px 24px;border-radius:6px;font-weight:700;text-decoration:none;transition:all .3s ease}
+        .style3.th-icon{background:var(--theme-color);color:#fff !important;padding:10px 22px;font-size:14px}
+
+        /* Container & Grid Utilities */
         .container,.th-container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:1320px}
         .row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+        .col-auto{flex:0 0 auto;width:auto}
+        .col-12{flex:0 0 100%;max-width:100%}
         .align-items-center{align-items:center}
+        .justify-content-center{justify-content:center}
         .justify-content-between{justify-content:space-between}
+        .text-center{text-align:center}
+
+        /* Display & Responsive Utilities (Crucial for FOUC & CLS elimination) */
+        .d-none{display:none !important}
+        .d-block{display:block !important}
+        .d-flex{display:flex !important}
+        .d-inline-flex{display:inline-flex !important}
+        .d-inline-block{display:inline-block !important}
+
+        @media (min-width:768px){
+            .d-md-block{display:block !important}
+            .col-md-6{flex:0 0 50%;max-width:50%}
+        }
+        @media (min-width:992px){
+            .d-lg-block{display:block !important}
+            .col-lg-4{flex:0 0 33.333333%;max-width:33.333333%}
+        }
+        @media (min-width:1200px){
+            .d-xl-none{display:none !important}
+            .d-xl-block{display:block !important}
+            .d-xl-inline-block{display:inline-block !important}
+            .justify-content-xl-between{justify-content:space-between !important}
+            .me-xl-auto{margin-right:auto !important}
+        }
         
         /* Modern Static B2B Hero Section */
-        .static-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:580px;background:#0d1829;display:flex;align-items:center}
-        .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center right}
-        .hero-inner-b2b{width:100%;padding:135px 0 80px 0;position:relative;z-index:5}
+        .static-hero-wrapper{position:relative;z-index:2;overflow:hidden;min-height:560px;background:#0d1829;display:flex;align-items:center}
+        .th-hero-bg{position:absolute;inset:0;overflow:hidden;background-size:cover;background-position:center right;background-image:linear-gradient(90deg, rgba(13, 24, 41, 0.92) 0%, rgba(13, 24, 41, 0.65) 45%, rgba(13, 24, 41, 0.15) 80%, rgba(13, 24, 41, 0.05) 100%), url('/assets/img/hero/hero-b2b-octopus-exporter.webp')}
+        .hero-inner-b2b{width:100%;padding:110px 0 70px 0;position:relative;z-index:5}
         .hero-style-b2b{max-width:850px;position:relative;z-index:9}
         
         /* Logo & Badge Pill Header */
@@ -194,18 +251,17 @@
         .pulse-dot{width:8px;height:8px;background-color:#5be351;border-radius:50%;box-shadow:0 0 0 0 rgba(91,227,81,0.7);animation:b2bPulse 2s infinite}
         @keyframes b2bPulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0.7)}70%{transform:scale(1);box-shadow:0 0 0 8px rgba(91,227,81,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(91,227,81,0)}}
         
-        .hero-style-b2b .hero-title{color:#ffffff;font-size:46px;line-height:1.2;font-weight:800;margin-bottom:18px;letter-spacing:-0.5px}
-        .hero-style-b2b .hero-lead{color:#d6deec;font-size:18px;line-height:1.55;margin-bottom:34px;font-weight:500}
+        .hero-style-b2b .hero-title{color:#ffffff;font-size:44px;line-height:1.2;font-weight:800;margin:0 0 18px 0;letter-spacing:-0.5px}
+        .hero-style-b2b .hero-lead{color:#d6deec;font-size:18px;line-height:1.55;margin-bottom:32px;font-weight:500}
         
-        .b2b-btn-group{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:45px}
-        .th-btn{display:inline-flex;align-items:center;padding:15px 30px;border-radius:6px;font-weight:700;text-decoration:none;transition:all .3s ease}
+        .b2b-btn-group{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:40px}
         .btn-quote{background:var(--theme-color);color:#ffffff !important;box-shadow:0 8px 25px rgba(72,155,66,0.4)}
         .btn-quote:hover{background:#3a8234;transform:translateY(-2px);box-shadow:0 12px 28px rgba(72,155,66,0.5)}
         .btn-explore{background:rgba(255,255,255,0.12);color:#ffffff !important;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(4px)}
         .btn-explore:hover{background:#ffffff;color:#141d38 !important;transform:translateY(-2px)}
         
         /* Floating Trust Badges Bar */
-        .hero-trust-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:rgba(13,24,41,0.78);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);border-radius:12px;padding:18px 24px;max-width:850px}
+        .hero-trust-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:rgba(13,24,41,0.78);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);border-radius:12px;padding:16px 22px;max-width:850px}
         .trust-item{display:flex;align-items:center;gap:12px}
         .trust-icon{width:40px;height:40px;border-radius:8px;background:rgba(72,155,66,0.22);color:#5be351;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
         .trust-text{display:flex;flex-direction:column}
@@ -213,18 +269,20 @@
         .trust-text span{color:#98a5bd;font-size:12px;line-height:1.3}
         
         @media (max-width:991px){
-            .hero-style-b2b .hero-title{font-size:36px}
-            .hero-trust-bar{grid-template-columns:repeat(2,1fr);gap:15px}
+            .hero-style-b2b .hero-title{font-size:34px}
+            .hero-trust-bar{grid-template-columns:repeat(2,1fr);gap:14px}
         }
         @media (max-width:767px){
-            .th-hero-bg{background-position:70% center}
-            .hero-inner-b2b{padding:120px 0 60px 0;background:linear-gradient(180deg, rgba(13,24,41,0.85) 0%, rgba(13,24,41,0.92) 100%)}
+            .static-hero-wrapper{min-height:520px}
+            .th-hero-bg{background-position:70% center;background-image:linear-gradient(180deg, rgba(13, 24, 41, 0.85) 0%, rgba(13, 24, 41, 0.92) 100%), url('/assets/img/hero/hero-b2b-octopus-exporter-mobile.webp')}
+            .hero-inner-b2b{padding:90px 0 50px 0;background:linear-gradient(180deg, rgba(13,24,41,0.85) 0%, rgba(13,24,41,0.92) 100%)}
             .hero-style-b2b{text-align:center}
-            .hero-brand-line{justify-content:center;margin-bottom:18px}
+            .hero-brand-line{justify-content:center;margin-bottom:16px}
             .hero-badge-pill{margin-left:auto;margin-right:auto}
-            .hero-style-b2b .hero-title{font-size:28px;line-height:1.25}
-            .hero-style-b2b .hero-lead{font-size:15px;margin-bottom:25px}
-            .b2b-btn-group{justify-content:center;margin-bottom:35px}
+            .hero-style-b2b .hero-title{font-size:26px;line-height:1.25}
+            .hero-style-b2b .hero-lead{font-size:14.5px;margin-bottom:24px}
+            .b2b-btn-group{justify-content:center;margin-bottom:30px;gap:12px}
+            .hero-trust-bar{grid-template-columns:repeat(2,1fr);gap:10px;padding:12px 14px}
         }
         
         /* B2B Export Products Section */
@@ -281,20 +339,19 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap">
     </noscript>
 
-    <!-- Instant LCP Hero Image Preload -->
-    <link rel="preload" as="image" href="/assets/img/hero/hero-b2b-octopus-exporter.webp" fetchpriority="high">
+    <!-- Instant Responsive LCP Hero Image Preload -->
+    <link rel="preload" as="image" href="/assets/img/hero/hero-b2b-octopus-exporter-mobile.webp" media="(max-width: 767px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/img/hero/hero-b2b-octopus-exporter.webp" media="(min-width: 768px)" fetchpriority="high">
 
-    <!-- Non-Blocking Asynchronous CSS (Est savings 2,430ms) -->
+    <!-- Non-Blocking Asynchronous CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/assets/css/style.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/assets/css/magnific-popup.min.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/style.min.css">
         <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
     </noscript>
 
@@ -304,7 +361,7 @@
 @section('container')
     <!-- Static High-Converting B2B Hero Section (SEO & GEO Optimized) -->
     <div class="th-hero-wrapper hero static-hero-wrapper" id="hero">
-        <div class="th-hero-bg background-image" style="background-image: linear-gradient(90deg, rgba(13, 24, 41, 0.92) 0%, rgba(13, 24, 41, 0.65) 45%, rgba(13, 24, 41, 0.15) 80%, rgba(13, 24, 41, 0.05) 100%), url('/assets/img/hero/hero-b2b-octopus-exporter.webp');" data-bg-src="/assets/img/hero/hero-b2b-octopus-exporter.webp"></div>
+        <div class="th-hero-bg background-image"></div>
         <div class="hero-inner-b2b">
             <div class="container th-container">
                 <div class="hero-style-b2b">
