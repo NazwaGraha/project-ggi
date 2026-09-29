@@ -6,65 +6,77 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <meta name="author" content="Gurita Global International">
+    <meta name="author" content="Gurita Global International By NazwaGraha">
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keyword')">
-    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-
-    <!-- Open Graph -->
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('description')">
-    <meta property="og:url" content="{{ Request::url() }}">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Octopus Indonesia | GGI">
-    <meta property="og:image" content="@yield('og_image', asset('assets/img/og-image-octopus.jpg'))">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://guritaglobal.com">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="@yield('title')">
+    
+        <!-- Eropa-->
+    <meta name="geo.region" content="IT" />
+    <meta name="geo.position" content="42.638426;12.674297" />
+    <meta name="ICBM" content="42.638426, 12.674297" />
+    
+    <meta name="geo.region" content="GR" />
+    <meta name="geo.position" content="38.995368;21.987713" />
+    <meta name="ICBM" content="38.995368, 21.987713" />
+    
+    <meta name="geo.region" content="ES" />
+    <meta name="geo.position" content="39.326069;-4.837979" />
+    <meta name="ICBM" content="39.326069, -4.837979" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('title')">
-    <meta name="twitter:description" content="@yield('description')">
-    <meta name="twitter:image" content="@yield('og_image', asset('assets/img/og-image-octopus.jpg'))">
+    <meta name="geo.region" content="FR" />
+    <meta name="geo.position" content="46.603354;1.888334" />
+    <meta name="ICBM" content="46.603354, 1.888334" />
 
-    <!-- Accurate Standard W3C GEO Meta Tags (Cirebon, West Java, Indonesia Factory Entity) -->
-    <meta name="geo.region" content="ID-JB">
-    <meta name="geo.placename" content="Cirebon, West Java, Indonesia">
-    <meta name="geo.position" content="-6.7451;108.5753">
-    <meta name="ICBM" content="-6.7451, 108.5753">
+    <!--Japan-->
+    <meta name="geo.region" content="JP" />
+    <meta name="geo.position" content="36.574844;139.239418" />
+    <meta name="ICBM" content="36.574844, 139.239418" />
 
-    <!-- hreflang Regional Targeting -->
-    <link rel="alternate" hreflang="en" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="x-default" href="{{ Request::url() }}" />
+    <!--Mexico-->
+    <meta name="geo.region" content="MX" />
+    <meta name="geo.placename" content="Ciudad de M&eacute;xico" />
+    <meta name="geo.position" content="19.43263;-99.133178" />
+    <meta name="ICBM" content="19.43263, -99.133178" />
+    
+    <!--USA-->
+    <meta name="geo.region" content="US" />
+    <meta name="geo.position" content="39.78373;-100.445882" />
+    <meta name="ICBM" content="39.78373, -100.445882" />
 
-    <!-- Canonical (Dynamic per halaman) -->
-    <link rel="canonical" href="@yield('canonical', Request::url())" />
+    <!--Asia-->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.position" content="35.000066;104.999955" />
+    <meta name="ICBM" content="35.000066, 104.999955" />
+    <meta name="geo.region" content="KR" />
+    <meta name="geo.position" content="36.638392;127.696119" />
+    <meta name="ICBM" content="36.638392, 127.696119" />
+    <meta name="geo.region" content="TH" />
+    <meta name="geo.position" content="14.897192;100.83273" />
+    <meta name="ICBM" content="14.897192, 100.83273" />
 
-    <link rel="icon" type="image/webp" href="/assets/img/GGILogo.webp">
-    <link rel="apple-touch-icon" href="/assets/img/GGILogo.webp">
+
+    <link rel="canonical" href="https://guritaglobal.com" />
+    <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
     <meta name="theme-color" content="#ffffff">
-
-    <!-- Non-Blocking Single Manrope Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"></noscript>
-
-    <!-- Non-Blocking Async CSS -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/css/style.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/style.min.css">
-        <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
-        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
-    </noscript>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@200..800&amp;family=Montez&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <meta name="google-site-verification" content="pf3U3Mu1mm5uf_VORNP49ZcDEAIgBpKR6ufOavORKeM" />
 </head>
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
@@ -141,8 +153,8 @@
                 <div class="container th-container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <div class="header-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" width="90" height="52"
-                                        alt="Octopus Indonesia" style="height: 44px; max-height: 44px; width: auto; max-width: 95px; object-fit: contain; display: block;"></a></div>
+                            <div class="header-logo"><a href="https://guritaglobal.com"><img src="/assets/img/GGILogo.webp" width="150"
+                                        alt="Octopus Indonesia"></a></div>
                         </div>
                         <div class="col-auto me-xl-auto">
                             <nav class="main-menu d-none d-xl-inline-block">
@@ -260,85 +272,29 @@
         </div>
         <div class="copyright-wrap" data-bg-src="/assets/img/bg/copyright_bg_1.jpg">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 text-center">
-                        <p class="copyright-text mb-0">Copyright &copy; {{ date('Y') }} <a href="https://guritaglobal.com">PT Gurita Global Internasional</a>. All Rights Reserved. By <a href="https://nazwagraha.com" target="_blank" rel="noopener">NazwaGraha</a></p>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text">Copyright 2024 <a href="https://guritaglobal.com">GGI</a>. All Rights
+                            Reserved.By <a href="https://nazwagraha.com">NazwaGraha</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Deferred Interaction / Idle Script Loader (Zero Total Blocking Time) -->
-    <script>
-        function loadDeferredScripts() {
-            if (window._deferredScriptsLoaded) return;
-            window._deferredScriptsLoaded = true;
-            var scripts = [
-                '/assets/js/vendor/jquery-3.6.0.min.js',
-                '/assets/js/bootstrap.min.js',
-                '/assets/js/jquery.magnific-popup.min.js',
-                '/assets/js/main.js'
-            ];
-            var loadNext = function(index) {
-                if (index >= scripts.length) return;
-                var s = document.createElement('script');
-                s.src = scripts[index];
-                s.async = true;
-                s.onload = function() { loadNext(index + 1); };
-                document.body.appendChild(s);
-            };
-            loadNext(0);
-        }
-        ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
-            window.addEventListener(e, loadDeferredScripts, { once: true, passive: true });
-        });
-        setTimeout(loadDeferredScripts, 5000);
-    </script>
-
-    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle -->
-    <div class="elfsight-app-50c3a093-127b-485f-9740-c336e3ac5849" data-elfsight-app-lazy></div>
-    <script>
-        function loadElfsight() {
-            if (window._elfsightLoaded) return;
-            window._elfsightLoaded = true;
-            var s = document.createElement('script');
-            s.src = 'https://static.elfsight.com/platform/platform.js';
-            s.async = true;
-            s.defer = true;
-            document.body.appendChild(s);
-        }
-        ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
-            window.addEventListener(e, loadElfsight, { once: true, passive: true });
-        });
-        setTimeout(loadElfsight, 7000);
-    </script>
-
-    <script>
-        (function() {
-            function initMobileMenu() {
-                var menu = document.querySelector('.th-menu-wrapper');
-                if (!menu) return;
-
-                document.addEventListener('click', function(e) {
-                    var openBtn = e.target.closest('.th-header .th-menu-toggle');
-                    var closeBtn = e.target.closest('.th-menu-wrapper .th-menu-toggle');
-                    var navLink = e.target.closest('.th-mobile-menu a');
-
-                    if (openBtn) {
-                        e.preventDefault();
-                        menu.classList.add('th-body-visible');
-                    } else if (closeBtn || navLink || e.target === menu) {
-                        menu.classList.remove('th-body-visible');
-                    }
-                });
-            }
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initMobileMenu);
-            } else {
-                initMobileMenu();
-            }
-        })();
-    </script>
+    <script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>
+    <script src="/assets/js/circle-progress.js"></script>
+    <script src="/assets/js/matter.min.js"></script>
+    <script src="/assets/js/matterjs-custom.js"></script>
+    <script src="/assets/js/nice-select.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 
