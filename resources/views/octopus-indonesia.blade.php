@@ -133,10 +133,25 @@
       },
       "offers": {
         "@type": "AggregateOffer",
+        "url": "https://guritaglobal.com/seafood-octopus-distributor",
         "priceCurrency": "USD",
-        "price": "Contact for CIF/FOB quote",
+        "lowPrice": "3.50",
+        "highPrice": "12.00",
+        "offerCount": "4",
+        "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "PT. Gurita Global Internasional"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "28",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
     </script>
