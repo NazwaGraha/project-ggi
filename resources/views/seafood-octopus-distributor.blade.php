@@ -209,8 +209,19 @@
         .spec-table tr:nth-child(even) td{background:#f8fafc}
         .spec-table td strong{color:#141d38}
         @media (max-width:767px){
-            .table-wrap{overflow-x:auto}
-            .spec-table th,.spec-table td{padding:10px 14px;font-size:13px}
+            .table-wrap{background:transparent;border:none;border-radius:0;box-shadow:none;overflow:visible;margin-bottom:25px}
+            .spec-table,.spec-table tbody,.spec-table tr,.spec-table td{display:block;width:100%}
+            .spec-table thead{display:none}
+            .spec-table tr{background:#ffffff !important;border:1px solid var(--border-color);border-radius:14px;padding:16px 14px;margin-bottom:14px;box-shadow:var(--card-shadow)}
+            .spec-table tr:last-child{margin-bottom:0}
+            .spec-table tr td{background:transparent !important;border:none;padding:0}
+            .spec-table td:nth-child(1){background:#f1f5f9 !important;color:#141d38;font-size:15px;font-weight:800;padding:9px 12px;border-radius:8px;margin-bottom:12px;border:1px solid #e2e8f0;display:flex;align-items:center;gap:8px}
+            .spec-table td:nth-child(1)::before{content:"";display:inline-block;width:5px;height:15px;background:var(--theme-color);border-radius:3px;flex-shrink:0}
+            .spec-table td:nth-child(1) strong{color:#141d38;font-weight:800;font-size:14.5px}
+            .spec-table td:nth-child(2){padding:0 4px 10px 4px;border-bottom:1px dashed #e2e8f0;margin-bottom:10px;color:#1e293b;font-size:14px;line-height:1.55}
+            .spec-table td:nth-child(2)::before{content:"Commercial Standard";display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#2d7a27;margin-bottom:4px}
+            .spec-table td:nth-child(3){padding:0 4px 4px 4px;color:#5a6376;font-size:13.5px;line-height:1.55}
+            .spec-table td:nth-child(3)::before{content:"Buyer Customization Options";display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#64748b;margin-bottom:4px}
         }
 
         /* Destination Market Configuration Cards */
