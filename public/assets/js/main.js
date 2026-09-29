@@ -63,13 +63,22 @@
 
             $(opt.menuToggleBtn).on("click", function(e) {
                 e.preventDefault();
-                toggleMenu();
+                e.stopPropagation();
+                if ($(this).closest(".th-menu-wrapper").length) {
+                    $menu.removeClass(opt.bodyToggleClass);
+                } else {
+                    $menu.addClass(opt.bodyToggleClass);
+                }
             });
 
             $menu.on("click", function(e) {
                 if ($(e.target).closest(".th-menu-area").length === 0) {
-                    toggleMenu();
+                    $menu.removeClass(opt.bodyToggleClass);
                 }
+            });
+
+            $menu.find(".th-mobile-menu a").on("click", function() {
+                $menu.removeClass(opt.bodyToggleClass);
             });
         });
     };

@@ -218,16 +218,30 @@
         setTimeout(loadElfsight, 7000);
     </script>
     <script>
-        document.addEventListener('click', function(e) {
-            var toggle = e.target.closest('.th-menu-toggle');
-            var menu = document.querySelector('.th-menu-wrapper');
-            if (toggle && menu) {
-                e.preventDefault();
-                menu.classList.toggle('th-body-visible');
-            } else if (menu && e.target === menu) {
-                menu.classList.remove('th-body-visible');
+        (function() {
+            function initMobileMenu() {
+                var menu = document.querySelector('.th-menu-wrapper');
+                if (!menu) return;
+
+                document.addEventListener('click', function(e) {
+                    var openBtn = e.target.closest('.th-header .th-menu-toggle');
+                    var closeBtn = e.target.closest('.th-menu-wrapper .th-menu-toggle');
+                    var navLink = e.target.closest('.th-mobile-menu a');
+
+                    if (openBtn) {
+                        e.preventDefault();
+                        menu.classList.add('th-body-visible');
+                    } else if (closeBtn || navLink || e.target === menu) {
+                        menu.classList.remove('th-body-visible');
+                    }
+                });
             }
-        });
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initMobileMenu);
+            } else {
+                initMobileMenu();
+            }
+        })();
     </script>
 </body>
 

@@ -143,6 +143,7 @@
         .th-menu-wrapper.th-body-visible{opacity:1;visibility:visible;pointer-events:auto}
         .th-menu-wrapper .th-menu-area{width:100%;max-width:310px;background:#fff;height:100%;position:relative;left:-100%;padding:30px 20px;overflow-y:auto;transition:left .35s cubic-bezier(0.16,1,0.3,1)}
         .th-menu-wrapper.th-body-visible .th-menu-area{left:0}
+        .th-menu-wrapper .th-menu-toggle{position:absolute;top:15px;right:15px;background:transparent !important;color:#141d38 !important;width:36px;height:36px;border:none}
         .mobile-logo{margin-bottom:24px}
         .th-mobile-menu ul{margin:0;padding:0;list-style:none;text-align:left}
         .th-mobile-menu ul li{border-bottom:1px solid #f1f5f9}
