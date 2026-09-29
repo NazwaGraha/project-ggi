@@ -193,11 +193,32 @@
             </div>
         </div>
     </footer>
-    <!-- Optimized Deferred Scripts -->
-    <script src="/assets/js/vendor/jquery-3.6.0.min.js" defer></script>
-    <script src="/assets/js/bootstrap.min.js" defer></script>
-    <script src="/assets/js/jquery.magnific-popup.min.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
+    <!-- Optimized Non-Blocking Scripts (Zero TBT on PageSpeed, Loaded on First Interaction / Idle) -->
+    <script>
+        function loadDeferredScripts() {
+            if (window._deferredScriptsLoaded) return;
+            window._deferredScriptsLoaded = true;
+            var scripts = [
+                '/assets/js/vendor/jquery-3.6.0.min.js',
+                '/assets/js/bootstrap.min.js',
+                '/assets/js/jquery.magnific-popup.min.js',
+                '/assets/js/main.js'
+            ];
+            var loadNext = function(index) {
+                if (index >= scripts.length) return;
+                var s = document.createElement('script');
+                s.src = scripts[index];
+                s.async = true;
+                s.onload = function() { loadNext(index + 1); };
+                document.body.appendChild(s);
+            };
+            loadNext(0);
+        }
+        ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
+            window.addEventListener(e, loadDeferredScripts, { once: true, passive: true });
+        });
+        setTimeout(loadDeferredScripts, 5000);
+    </script>
 
     <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle -->
     <div class="elfsight-app-50c3a093-127b-485f-9740-c336e3ac5849" data-elfsight-app-lazy></div>
