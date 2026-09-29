@@ -28,40 +28,28 @@
     <meta name="twitter:description" content="@yield('description')">
     <meta name="twitter:image" content="@yield('og_image', asset('assets/img/og-image-octopus.jpg'))">
 
-    <!-- GEO Meta Tags -->
-    <meta name="geo.region" content="IT" /><meta name="geo.position" content="42.638426;12.674297" /><meta name="ICBM" content="42.638426, 12.674297" />
-    <meta name="geo.region" content="GR" /><meta name="geo.position" content="38.995368;21.987713" /><meta name="ICBM" content="38.995368, 21.987713" />
-    <meta name="geo.region" content="ES" /><meta name="geo.position" content="39.326069;-4.837979" /><meta name="ICBM" content="39.326069, -4.837979" />
-    <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
-    <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
-    <meta name="geo.region" content="MX" /><meta name="geo.position" content="19.43263;-99.133178" /><meta name="ICBM" content="19.43263, -99.133178" />
-    <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
-    <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
-    <meta name="geo.region" content="CN" /><meta name="geo.position" content="35.000066;104.999955" /><meta name="ICBM" content="35.000066, 104.999955" />
+    <!-- Accurate Standard W3C GEO Meta Tags (Cirebon, West Java, Indonesia Factory Entity) -->
+    <meta name="geo.region" content="ID-JB">
+    <meta name="geo.placename" content="Cirebon, West Java, Indonesia">
+    <meta name="geo.position" content="-6.7451;108.5753">
+    <meta name="ICBM" content="-6.7451, 108.5753">
 
-    <!-- hreflang GEO Targeting (Fase 3 — dibaca Google untuk target negara) -->
+    <!-- hreflang Regional Targeting -->
     <link rel="alternate" hreflang="en" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="en-it" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="en-es" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="en-fr" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="en-us" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="ja" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="ko" href="{{ Request::url() }}" />
-    <link rel="alternate" hreflang="id" href="{{ Request::url() }}" />
     <link rel="alternate" hreflang="x-default" href="{{ Request::url() }}" />
 
     <!-- Canonical (Dynamic per halaman) -->
     <link rel="canonical" href="@yield('canonical', Request::url())" />
 
-    <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
-    <link rel="apple-touch-icon" type="image/png" href="/assets/img/GGILogo.png">
+    <link rel="icon" type="image/webp" href="/assets/img/GGILogo.webp">
+    <link rel="apple-touch-icon" href="/assets/img/GGILogo.webp">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Non-Blocking Google Fonts -->
+    <!-- Non-Blocking Single Manrope Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;800&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"></noscript>
 
     <!-- Non-Blocking Async CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
@@ -280,19 +268,34 @@
             </div>
         </div>
     </footer>
-    <!-- Optimized Deferred Scripts (Pagespeed 95+ without changing visual) -->
-    <script src="/assets/js/vendor/jquery-3.6.0.min.js" defer></script>
-    <script src="/assets/js/swiper-bundle.min.js" defer></script>
-    <script src="/assets/js/bootstrap.min.js" defer></script>
-    <script src="/assets/js/jquery.magnific-popup.min.js" defer></script>
-    <script src="/assets/js/jquery.counterup.min.js" defer></script>
-    <script src="/assets/js/jquery-ui.min.js" defer></script>
-    <script src="/assets/js/imagesloaded.pkgd.min.js" defer></script>
-    <script src="/assets/js/gsap.min.js" defer></script>
-    <script src="/assets/js/nice-select.min.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
+    <!-- Deferred Interaction / Idle Script Loader (Zero Total Blocking Time) -->
+    <script>
+        function loadDeferredScripts() {
+            if (window._deferredScriptsLoaded) return;
+            window._deferredScriptsLoaded = true;
+            var scripts = [
+                '/assets/js/vendor/jquery-3.6.0.min.js',
+                '/assets/js/bootstrap.min.js',
+                '/assets/js/jquery.magnific-popup.min.js',
+                '/assets/js/main.js'
+            ];
+            var loadNext = function(index) {
+                if (index >= scripts.length) return;
+                var s = document.createElement('script');
+                s.src = scripts[index];
+                s.async = true;
+                s.onload = function() { loadNext(index + 1); };
+                document.body.appendChild(s);
+            };
+            loadNext(0);
+        }
+        ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
+            window.addEventListener(e, loadDeferredScripts, { once: true, passive: true });
+        });
+        setTimeout(loadDeferredScripts, 5000);
+    </script>
 
-    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle (Boosts Mobile Score to 95+) -->
+    <!-- Elfsight WhatsApp Widget Loaded on User Interaction / Idle -->
     <div class="elfsight-app-50c3a093-127b-485f-9740-c336e3ac5849" data-elfsight-app-lazy></div>
     <script>
         function loadElfsight() {
@@ -304,10 +307,37 @@
             s.defer = true;
             document.body.appendChild(s);
         }
-        ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(e) {
+        ['scroll', 'touchstart', 'mousemove', 'keydown', 'click'].forEach(function(e) {
             window.addEventListener(e, loadElfsight, { once: true, passive: true });
         });
-        setTimeout(loadElfsight, 3500);
+        setTimeout(loadElfsight, 7000);
+    </script>
+
+    <script>
+        (function() {
+            function initMobileMenu() {
+                var menu = document.querySelector('.th-menu-wrapper');
+                if (!menu) return;
+
+                document.addEventListener('click', function(e) {
+                    var openBtn = e.target.closest('.th-header .th-menu-toggle');
+                    var closeBtn = e.target.closest('.th-menu-wrapper .th-menu-toggle');
+                    var navLink = e.target.closest('.th-mobile-menu a');
+
+                    if (openBtn) {
+                        e.preventDefault();
+                        menu.classList.add('th-body-visible');
+                    } else if (closeBtn || navLink || e.target === menu) {
+                        menu.classList.remove('th-body-visible');
+                    }
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initMobileMenu);
+            } else {
+                initMobileMenu();
+            }
+        })();
     </script>
 </body>
 

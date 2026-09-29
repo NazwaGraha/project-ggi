@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://guritaglobal.com/best-octopus-indonesia">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Best Octopus Indonesia | GGI">
-    <meta property="og:image" content="{{ asset('assets/img/gallery/About-1.webp') }}">
+    <meta property="og:image" content="{{ asset('assets/img/og-image-octopus.jpg') }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -30,38 +30,54 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Best Octopus Indonesia Supplier | GGI">
     <meta name="twitter:description" content="Premium frozen octopus processing factory in Indonesia. Fully certified for global trade and bulk shipment.">
-    <meta name="twitter:image" content="{{ asset('assets/img/gallery/About-1.webp') }}">
+    <meta name="twitter:image" content="{{ asset('assets/img/og-image-octopus.jpg') }}">
     
-    <!-- GEO Meta Tags -->
-    <meta name="geo.region" content="IT" /><meta name="geo.position" content="42.638426;12.674297" /><meta name="ICBM" content="42.638426, 12.674297" />
-    <meta name="geo.region" content="GR" /><meta name="geo.position" content="38.995368;21.987713" /><meta name="ICBM" content="38.995368, 21.987713" />
-    <meta name="geo.region" content="ES" /><meta name="geo.position" content="39.326069;-4.837979" /><meta name="ICBM" content="39.326069, -4.837979" />
-    <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
-    <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
-    <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
-    <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
+    <!-- Accurate Standard W3C GEO Meta Tags (Cirebon, West Java, Indonesia Factory Entity) -->
+    <meta name="geo.region" content="ID-JB">
+    <meta name="geo.placename" content="Cirebon, West Java, Indonesia">
+    <meta name="geo.position" content="-6.7451;108.5753">
+    <meta name="ICBM" content="-6.7451, 108.5753">
 
-    <!-- hreflang GEO Targeting -->
+    <!-- hreflang Regional Targeting -->
     <link rel="alternate" hreflang="en" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="en-it" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="en-es" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="en-fr" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="en-us" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="ja" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="ko" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="alternate" hreflang="id" href="https://guritaglobal.com/best-octopus-indonesia" />
     <link rel="alternate" hreflang="x-default" href="https://guritaglobal.com/best-octopus-indonesia" />
 
     <link rel="canonical" href="https://guritaglobal.com/best-octopus-indonesia" />
-    <link rel="apple-touch-icon" href="/assets/img/GGILogo.png">
-    <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
+    <link rel="apple-touch-icon" href="/assets/img/GGILogo.webp">
+    <link rel="icon" type="image/webp" href="/assets/img/GGILogo.webp">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Non-Blocking Google Fonts -->
+    <!-- AboutPage Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Octopus Indonesia — PT Gurita Global Internasional",
+      "url": "https://guritaglobal.com/best-octopus-indonesia",
+      "description": "Learn about PT Gurita Global Internasional, direct processing factory and exporter of wild-caught frozen Octopus Vulgaris based in Cirebon, Indonesia.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "PT. Gurita Global Internasional",
+        "alternateName": ["Octopus Indonesia", "GGI"],
+        "url": "https://guritaglobal.com",
+        "logo": "https://guritaglobal.com/assets/img/GGILogo.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ICS Pelabuhan Perikanan Nusantara Kejawanan, Pegambiran, Kec. Lemahwungkuk",
+          "addressLocality": "Cirebon",
+          "addressRegion": "Jawa Barat",
+          "postalCode": "45113",
+          "addressCountry": "ID"
+        }
+      }
+    }
+    </script>
+
+    <!-- Optimized Font Preconnect & Non-Blocking Google Fonts (Manrope Only) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;700;800&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"></noscript>
 
     <!-- Complete Scoped Styles (Zero Render Blocking, Crisp Typography, Proportional Headings) -->
     <style>
@@ -274,24 +290,34 @@
             .copyright-wrap{text-align:center}
             .footer-links ul{justify-content:center;margin-top:10px}
         }
-    </style>
 
-    <!-- AboutPage Schema JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "name": "About PT. Gurita Global Internasional — Best Octopus Indonesia Supplier",
-      "description": "Learn about PT. Gurita Global Internasional, a premier frozen octopus processor and exporter in Indonesia operating with HACCP and Halal certifications.",
-      "url": "https://guritaglobal.com/best-octopus-indonesia",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "PT. Gurita Global Internasional",
-        "url": "https://guritaglobal.com",
-        "logo": "https://guritaglobal.com/assets/img/GGILogo.webp"
-      }
-    }
-    </script>
+        /* Quick B2B RFQ Modal */
+        .rfq-modal-backdrop{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(13,24,41,0.85);z-index:999999;display:none;align-items:center;justify-content:center;padding:15px;backdrop-filter:blur(6px)}
+        .rfq-modal-backdrop.is-active{display:flex}
+        .rfq-modal-box{background:#ffffff;border-radius:18px;max-width:560px;width:100%;max-height:92vh;overflow-y:auto;padding:32px 28px;position:relative;box-shadow:0 20px 50px rgba(0,0,0,0.35);animation:rfqModalPop .28s cubic-bezier(0.16,1,0.3,1)}
+        @keyframes rfqModalPop{from{opacity:0;transform:scale(0.92) translateY(15px)}to{opacity:1;transform:scale(1) translateY(0)}}
+        .rfq-modal-close{position:absolute;top:18px;right:18px;background:#f1f5f9;border:none;border-radius:50%;width:34px;height:34px;font-size:18px;line-height:1;color:#141d38;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease}
+        .rfq-modal-close:hover{background:#e2e8f0}
+        .rfq-modal-title{font-size:22px;font-weight:800;color:#141d38;margin-bottom:6px}
+        .rfq-modal-subtitle{font-size:13.5px;color:#64748b;margin-bottom:20px}
+        .rfq-form-group{margin-bottom:14px;text-align:left}
+        .rfq-form-label{display:block;font-size:12.5px;font-weight:700;color:#141d38;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.4px}
+        .rfq-form-control{width:100%;padding:10px 14px;border:1px solid #cbd5e1;border-radius:8px;font-size:14px;color:#141d38;font-family:inherit;background:#fff;transition:border-color .2s ease}
+        .rfq-form-control:focus{outline:none;border-color:var(--theme-color);box-shadow:0 0 0 3px rgba(72,155,66,0.15)}
+        .rfq-submit-btn{background:var(--theme-color);color:#fff;font-weight:800;font-size:15px;padding:13px 20px;border-radius:8px;border:none;width:100%;cursor:pointer;margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .25s ease}
+        .rfq-submit-btn:hover{background:var(--theme-dark);transform:translateY(-1px)}
+        .rfq-privacy-note{font-size:11.5px;color:#94a3b8;text-align:center;margin-top:12px}
+
+        /* Persistent Mobile Sticky Action Bar */
+        .mobile-sticky-bar{display:none;position:fixed;bottom:0;left:0;width:100%;background:#ffffff;border-top:1px solid #e2e8f0;padding:10px 14px;z-index:9999;box-shadow:0 -4px 16px rgba(0,0,0,0.08)}
+        .mobile-bar-btns{display:flex;gap:10px;width:100%}
+        .mobile-bar-btn-wa{flex:1;background:var(--theme-color);color:#ffffff !important;font-weight:800;font-size:13.5px;padding:11px 12px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
+        .mobile-bar-btn-rfq{flex:1;background:#141d38;color:#ffffff !important;font-weight:800;font-size:13.5px;padding:11px 12px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:6px;border:none;cursor:pointer}
+        @media (max-width:767px){
+            .mobile-sticky-bar{display:block}
+            body{padding-bottom:60px}
+        }
+    </style>
 
     <!-- BreadcrumbList Schema JSON-LD -->
     <script type="application/ld+json">
@@ -519,8 +545,11 @@
                 <p>
                     Connect directly with our international export sales desk for detailed product specifications, current harvest pricing, and customized bulk orders.
                 </p>
-                <div class="about-cta-btns">
-                    <a href="https://api.whatsapp.com/send?phone=6281111808661&text=Hello%20GGI,%20I%20am%20interested%20in%20sourcing%20Frozen%20Octopus%20Indonesia." target="_blank" rel="noopener noreferrer" class="btn-cta-quote">
+                    <button type="button" class="btn-cta-quote" onclick="openRfqModal('General Company Inquiry')" style="border:none;cursor:pointer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        <span>Request Wholesale RFQ (FOB/CIF)</span>
+                    </button>
+                    <a href="https://api.whatsapp.com/send?phone=6281111808661&text=Hello%20GGI,%20I%20am%20interested%20in%20sourcing%20Frozen%20Octopus%20Indonesia." target="_blank" rel="noopener noreferrer" class="btn-cta-explore">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                         <span>WhatsApp Export Desk</span>
                     </a>
@@ -532,4 +561,152 @@
             </div>
         </div>
     </section>
+
+    <!-- Interactive Quick B2B RFQ Modal Form -->
+    <div class="rfq-modal-backdrop" id="rfqModal" onclick="closeRfqOnBackdrop(event)">
+        <div class="rfq-modal-box">
+            <button type="button" class="rfq-modal-close" onclick="closeRfqModal()" aria-label="Close RFQ Modal">&times;</button>
+            <h3 class="rfq-modal-title">Request B2B Wholesale Quote</h3>
+            <p class="rfq-modal-subtitle">Submit your container specifications directly to our Cirebon export desk. We calculate CIF / FOB rates promptly.</p>
+            
+            <form id="rfqQuickForm" onsubmit="handleRfqSubmit(event)">
+                <div class="rfq-form-group">
+                    <label class="rfq-form-label" for="rfqProduct">Selected Product</label>
+                    <select id="rfqProduct" class="rfq-form-control" required>
+                        <option value="Whole Cleaned Flower Octopus (T1-T8)">Whole Cleaned Flower Octopus (T1-T8)</option>
+                        <option value="Baby Octopus & Takoyaki Cut (20/40, 40/60)">Baby Octopus &amp; Takoyaki Cut (20/40, 40/60)</option>
+                        <option value="Blanched & Cooked Octopus Tentacles">Blanched &amp; Cooked Octopus Tentacles</option>
+                        <option value="Mexico Market Yucatan Style (1000g Up)">Mexico Market Yucatan Style (1000g Up)</option>
+                        <option value="Air Freight Sample Request">Air Freight Sample Request</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="rfq-form-group">
+                            <label class="rfq-form-label" for="rfqVolume">Order Volume</label>
+                            <select id="rfqVolume" class="rfq-form-control" required>
+                                <option value="1x20ft FCL (~12-14 MT)">1x20ft FCL (~12-14 MT)</option>
+                                <option value="1x40ft FCL (~24-26 MT)">1x40ft FCL (~24-26 MT)</option>
+                                <option value="Multi-Container Contract">Multi-Container Contract</option>
+                                <option value="Sample Evaluation Batch">Sample Evaluation Batch</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="rfq-form-group">
+                            <label class="rfq-form-label" for="rfqIncoterm">Incoterm</label>
+                            <select id="rfqIncoterm" class="rfq-form-control" required>
+                                <option value="CIF (Destination Port)">CIF (Destination Port)</option>
+                                <option value="FOB (Port of Cirebon / Jakarta)">FOB (Port of Cirebon / Jakarta)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rfq-form-group">
+                    <label class="rfq-form-label" for="rfqPort">Destination Port &amp; Country</label>
+                    <input type="text" id="rfqPort" class="rfq-form-control" placeholder="e.g. Valencia Port (Spain), Los Angeles (USA), Tokyo (Japan)" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="rfq-form-group">
+                            <label class="rfq-form-label" for="rfqCompany">Company Name</label>
+                            <input type="text" id="rfqCompany" class="rfq-form-control" placeholder="Importer / Distributor Name" required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="rfq-form-group">
+                            <label class="rfq-form-label" for="rfqContact">Your Name &amp; Role</label>
+                            <input type="text" id="rfqContact" class="rfq-form-control" placeholder="e.g. John Doe (Procurement Manager)" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rfq-form-group">
+                    <label class="rfq-form-label" for="rfqPhone">WhatsApp / Phone Number</label>
+                    <input type="tel" id="rfqPhone" class="rfq-form-control" placeholder="+ Country Code &amp; Number" required>
+                </div>
+
+                <button type="submit" class="rfq-submit-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    <span>Send RFQ to Export Sales Desk (WhatsApp)</span>
+                </button>
+                <p class="rfq-privacy-note">Official PT. Gurita Global Internasional Export Desk &bull; Cirebon, Indonesia</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Persistent Mobile Sticky Action Bar -->
+    <div class="mobile-sticky-bar">
+        <div class="mobile-bar-btns">
+            <a href="https://wa.me/6281111808661?text=Hello%20Octopus%20Indonesia%20(GGI),%20I%20would%20like%20to%20request%20wholesale%20quotation%20and%20container%20specifications." class="mobile-bar-btn-wa" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>WhatsApp Desk</span>
+            </a>
+            <button type="button" class="mobile-bar-btn-rfq" onclick="openRfqModal('General Mobile Inquiry')">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span>Quick RFQ</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Inline Vanilla JS for RFQ Modal -->
+    <script>
+        function openRfqModal(productName) {
+            var modal = document.getElementById('rfqModal');
+            if (productName && document.getElementById('rfqProduct')) {
+                var select = document.getElementById('rfqProduct');
+                for (var i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value === productName || select.options[i].text.indexOf(productName) !== -1) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            if (modal) {
+                modal.classList.add('is-active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeRfqModal() {
+            var modal = document.getElementById('rfqModal');
+            if (modal) {
+                modal.classList.remove('is-active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function closeRfqOnBackdrop(e) {
+            if (e.target.id === 'rfqModal') {
+                closeRfqModal();
+            }
+        }
+
+        function handleRfqSubmit(e) {
+            e.preventDefault();
+            var product = document.getElementById('rfqProduct').value;
+            var volume = document.getElementById('rfqVolume').value;
+            var incoterm = document.getElementById('rfqIncoterm').value;
+            var port = document.getElementById('rfqPort').value;
+            var company = document.getElementById('rfqCompany').value;
+            var contact = document.getElementById('rfqContact').value;
+            var phone = document.getElementById('rfqPhone').value;
+
+            var msg = "Hello PT. Gurita Global Internasional (Octopus Indonesia), I would like to request an official wholesale quotation:\n\n" +
+                      "• Product: " + product + "\n" +
+                      "• Order Volume: " + volume + "\n" +
+                      "• Incoterm: " + incoterm + "\n" +
+                      "• Destination Port: " + port + "\n" +
+                      "• Company Name: " + company + "\n" +
+                      "• Contact Person: " + contact + "\n" +
+                      "• WhatsApp/Phone: " + phone;
+
+            var waUrl = "https://wa.me/6281111808661?text=" + encodeURIComponent(msg);
+            window.open(waUrl, '_blank');
+            closeRfqModal();
+        }
+    </script>
 @endsection

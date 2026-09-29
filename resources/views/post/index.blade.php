@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://guritaglobal.com/post">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PT. Gurita Global Internasional">
-    <meta property="og:image" content="{{ asset('assets/img/gallery/Product-1.webp') }}">
+    <meta property="og:image" content="{{ asset('assets/img/og-image-octopus.jpg') }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -30,39 +30,28 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Octopus Indonesia Industry News & Wholesale Updates | GGI Blog">
     <meta name="twitter:description" content="Explore industry insights, export guides, and wholesale frozen octopus Indonesia market updates.">
-    <meta name="twitter:image" content="{{ asset('assets/img/gallery/Product-1.webp') }}">
+    <meta name="twitter:image" content="{{ asset('assets/img/og-image-octopus.jpg') }}">
 
-    <!-- GEO Meta Tags -->
-    <meta name="geo.region" content="IT" /><meta name="geo.position" content="42.638426;12.674297" /><meta name="ICBM" content="42.638426, 12.674297" />
-    <meta name="geo.region" content="GR" /><meta name="geo.position" content="38.995368;21.987713" /><meta name="ICBM" content="38.995368, 21.987713" />
-    <meta name="geo.region" content="ES" /><meta name="geo.position" content="39.326069;-4.837979" /><meta name="ICBM" content="39.326069, -4.837979" />
-    <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
-    <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
-    <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
-    <meta name="geo.region" content="MX" /><meta name="geo.position" content="23.634501;-102.552784" /><meta name="ICBM" content="23.634501, -102.552784" />
-    <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
+    <!-- Accurate Standard W3C GEO Meta Tags (Cirebon, West Java, Indonesia Factory Entity) -->
+    <meta name="geo.region" content="ID-JB">
+    <meta name="geo.placename" content="Cirebon, West Java, Indonesia">
+    <meta name="geo.position" content="-6.7451;108.5753">
+    <meta name="ICBM" content="-6.7451, 108.5753">
 
-    <!-- hreflang GEO Targeting -->
+    <!-- hreflang Regional Targeting -->
     <link rel="alternate" hreflang="en" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="en-it" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="en-es" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="en-us" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="es-mx" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="ja" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="ko" href="https://guritaglobal.com/post" />
-    <link rel="alternate" hreflang="id" href="https://guritaglobal.com/post" />
     <link rel="alternate" hreflang="x-default" href="https://guritaglobal.com/post" />
 
-    <link rel="icon" type="image/png" href="/assets/img/GGILogo.png">
+    <link rel="icon" type="image/webp" href="/assets/img/GGILogo.webp">
     <link rel="canonical" href="https://guritaglobal.com/post" />
-    <link rel="apple-touch-icon" type="image/png" href="/assets/img/GGILogo.png">
+    <link rel="apple-touch-icon" href="/assets/img/GGILogo.webp">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Non-Blocking Google Fonts -->
+    <!-- Non-Blocking Google Fonts (Manrope Only) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;700;800&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"></noscript>
 
     <!-- Complete Scoped Styles (Zero Render-Blocking, High-Conversion Editorial Layout) -->
     <style>
