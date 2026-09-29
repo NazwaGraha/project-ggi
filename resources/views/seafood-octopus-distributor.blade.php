@@ -9,13 +9,13 @@
     
     <title>Seafood Octopus Distributor Indonesia | Premium Frozen Export Wholesale</title>
     <meta name="author" content="Gurita Global International">
-    <meta name="description" content="Wholesale seafood octopus distributor & exporter in Indonesia. Supplying premium IQF Octopus Vulgaris, whole cleaned, and tentacles to Europe, Japan, USA, and Korea. Request bulk quote.">
+    <meta name="description" content="Wholesale seafood octopus distributor & exporter in Indonesia. Supplying premium IQF Octopus Vulgaris, whole cleaned, Yucatan Style, and tentacles to Europe, Japan, USA, Mexico, and Korea. Request bulk quote.">
     <meta name="keywords" content="Seafood Octopus Distributor, Wholesale Frozen Octopus Indonesia, Bulk Octopus Supplier Indonesia, Octopus Indonesia, Best Octopus Indonesia, Gurita Global International, Indonesian octopus exporter, IQF Octopus Wholesale, Frozen Octopus Vulgaris">
     <meta name="robots" content="index, follow, max-image-preview:large">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Seafood Octopus Distributor Indonesia | Premium Frozen Export">
-    <meta property="og:description" content="Wholesale frozen octopus supplier & exporter in Indonesia. Premium IQF Octopus Vulgaris, whole cleaned, and tentacles for global B2B buyers.">
+    <meta property="og:description" content="Wholesale frozen octopus supplier & exporter in Indonesia. Premium IQF Octopus Vulgaris, whole cleaned, Yucatan Style, and tentacles for global B2B buyers.">
     <meta property="og:url" content="https://guritaglobal.com/seafood-octopus-distributor">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PT. Gurita Global Internasional">
@@ -36,6 +36,7 @@
     <meta name="geo.region" content="FR" /><meta name="geo.position" content="46.603354;1.888334" /><meta name="ICBM" content="46.603354, 1.888334" />
     <meta name="geo.region" content="JP" /><meta name="geo.position" content="36.574844;139.239418" /><meta name="ICBM" content="36.574844, 139.239418" />
     <meta name="geo.region" content="US" /><meta name="geo.position" content="39.78373;-100.445882" /><meta name="ICBM" content="39.78373, -100.445882" />
+    <meta name="geo.region" content="MX" /><meta name="geo.position" content="23.634501;-102.552784" /><meta name="ICBM" content="23.634501, -102.552784" />
     <meta name="geo.region" content="KR" /><meta name="geo.position" content="36.638392;127.696119" /><meta name="ICBM" content="36.638392, 127.696119" />
 
     <!-- hreflang GEO Targeting -->
@@ -43,6 +44,7 @@
     <link rel="alternate" hreflang="en-it" href="https://guritaglobal.com/seafood-octopus-distributor" />
     <link rel="alternate" hreflang="en-es" href="https://guritaglobal.com/seafood-octopus-distributor" />
     <link rel="alternate" hreflang="en-us" href="https://guritaglobal.com/seafood-octopus-distributor" />
+    <link rel="alternate" hreflang="es-mx" href="https://guritaglobal.com/seafood-octopus-distributor" />
     <link rel="alternate" hreflang="ja" href="https://guritaglobal.com/seafood-octopus-distributor" />
     <link rel="alternate" hreflang="ko" href="https://guritaglobal.com/seafood-octopus-distributor" />
     <link rel="alternate" hreflang="id" href="https://guritaglobal.com/seafood-octopus-distributor" />
@@ -212,12 +214,13 @@
         }
 
         /* Destination Market Configuration Cards */
-        .market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:30px}
-        @media (max-width:1199px){.market-grid{grid-template-columns:repeat(2,1fr)}}
+        .market-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:30px}
+        @media (max-width:1199px){.market-grid{grid-template-columns:repeat(3,1fr)}}
+        @media (max-width:991px){.market-grid{grid-template-columns:repeat(2,1fr)}}
         @media (max-width:640px){.market-grid{grid-template-columns:1fr}}
-        .market-card{background:#ffffff;border:1px solid var(--border-color);border-radius:14px;padding:22px;box-shadow:var(--card-shadow);display:flex;flex-direction:column}
-        .market-card h4{font-size:16.5px;color:#141d38;margin-bottom:10px;font-weight:800;display:flex;align-items:center;gap:8px}
-        .market-card ul{margin:0;padding-left:18px;font-size:13.5px;color:#64748b}
+        .market-card{background:#ffffff;border:1px solid var(--border-color);border-radius:14px;padding:20px 16px;box-shadow:var(--card-shadow);display:flex;flex-direction:column}
+        .market-card h4{font-size:16px;color:#141d38;margin-bottom:10px;font-weight:800;display:flex;align-items:center;gap:8px}
+        .market-card ul{margin:0;padding-left:18px;font-size:13px;color:#64748b}
         .market-card li{margin-bottom:6px;line-height:1.5}
 
         /* FAQ Grid Cards */
@@ -300,7 +303,7 @@
         "https://guritaglobal.com/assets/img/gallery/Product-3.webp",
         "https://guritaglobal.com/assets/img/gallery/Product-4.webp"
       ],
-      "description": "Premium wild-caught frozen octopus processed under strict HACCP and Halal standards by PT Gurita Global Internasional. Available in Whole Cleaned, Frozen Octopus (T1–T8 standard calibrations), Tentacles, and Takoyaki Cuts for B2B export to Europe, USA, Japan, and Korea.",
+      "description": "Premium wild-caught frozen octopus processed under strict HACCP and Halal standards by PT Gurita Global Internasional. Available in Whole Cleaned, Frozen Octopus (T1–T8 standard calibrations), Yucatan Style (1000 gr Up), Tentacles, and Takoyaki Cuts for B2B export to Europe, USA, Mexico, Japan, and Korea.",
       "brand": {
         "@type": "Brand",
         "name": "PT. Gurita Global Internasional"
@@ -536,13 +539,13 @@
                         </tr>
                         <tr>
                             <td><strong>Processing Presentation</strong></td>
-                            <td>Whole Cleaned (gutted, eyes & beak removed), Ball Type, Flower Shape, Tentacles, Takodice</td>
+                            <td>Whole Cleaned (gutted, eyes & beak removed), Ball Type, Flower Shape, Yucatan Style, Tentacles, Takodice</td>
                             <td>Individually Quick Frozen (IQF), Semi-IQF, or Interleaved Block Frozen</td>
                         </tr>
                         <tr>
                             <td><strong>Size Grading & Calibration</strong></td>
-                            <td>International T-Grade Standards (T1 to T8) & Gram Calibrations</td>
-                            <td>T1 (&gt;4kg), T2 (3–4kg), T3 (2–3kg), T4 (1.5–2kg), T5 (1.2–1.5kg), T6 (800–1200g), T7 (500–800g), T8 (300–500g). Custom grading per buyer requirements.</td>
+                            <td>International T-Grade Standards (T1 to T8), Yucatan Style (1000g Up) & Gram Calibrations</td>
+                            <td>T1 (&gt;4kg), T2 (3–4kg), T3 (2–3kg), T4 (1.5–2kg), T5 (1.2–1.5kg), T6 (800–1200g), T7 (500–800g), T8 (300–500g), Yucatan Style (1000g+). Custom grading per buyer requirements.</td>
                         </tr>
                         <tr>
                             <td><strong>Glazing Percentage</strong></td>
@@ -609,6 +612,18 @@
                         <li><strong>IQF W/C Ball Type:</strong> Calibrated 1/2 to 8 Lbs up</li>
                         <li><strong>Frozen Octopus:</strong> Graded 1/2 to 8 lbs up (T1–T8 international sizes)</li>
                         <li><strong>Packaging:</strong> US-FDA compliant retail and wholesale polybags</li>
+                    </ul>
+                </div>
+
+                <div class="market-card">
+                    <h4>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                        <span>Mexico Market</span>
+                    </h4>
+                    <ul>
+                        <li><strong>IQF Yucatan Style:</strong> 1000 gr Up</li>
+                        <li><strong>Processing Spec:</strong> Whole Cleaned, gut &amp; eyes removed, natural ocean quality</li>
+                        <li><strong>Packaging:</strong> 10 kg / 20 kg Master Export Carton with blue liner</li>
                     </ul>
                 </div>
 
